@@ -1,0 +1,223 @@
+.modal-login {
+	display: none;
+}
+
+.modal-login--opened {
+	position: fixed;
+	left: calc(50% - 130px);
+	top: calc(40% - 66px);
+	// transform: translate(-50%,-50%);
+
+	display: block;
+	width: 260px;
+	padding: 20px;
+	box-sizing: border-box;
+
+	background-color: white;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+	border-radius: 25px;
+
+	animation-name: from-top;
+	animation-duration: 0.6s;
+
+	z-index: 9;
+}
+
+.modal-login__form {
+	height: 100%;
+	overflow: hidden;
+}
+
+.modal-login__buttons-block {
+	display: none;
+}
+
+.modal-login__buttons-block--opened {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+
+	animation-name: from-left;
+	animation-duration: 0.6s;
+}
+
+.modal-login__button {
+	width: 195px;
+	height: 26px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+
+	font-family: "MyriadProBold", sans-serif;
+	font-size: 16px;
+	color: $main-green;
+	text-transform: uppercase;
+
+	border: 1px solid black;
+	border-radius: 13px; 
+	background-color: transparent;
+
+	text-align: center;
+	line-height: 25px;
+}
+
+.modal-login__enter-block {
+	display: none;
+}
+
+.modal-login__enter-block--opened {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
+
+	font-family: "MyriadProRegular", sans-serif;
+	font-size: 15px;
+
+	animation-name: from-right;
+	animation-duration: 0.6s;
+}
+
+.modal-login__text-input {
+	height: 44px;
+	padding-left: 20px;
+	padding-right: 20px;
+	box-sizing: border-box;
+
+	background-color: #dcede7;
+	border: 1px solid #dcede7;
+	border-right: 3px;
+
+	&--password {
+		margin-top: 15px;
+	}
+}
+
+.modal-login__forget-password {
+	align-self: flex-end;
+	margin-top: 25px;
+
+	color: black;
+	text-decoration: none;
+}
+
+.modal-login__button--form-enter {
+	width: 100%;
+	height: 34px;
+
+	font-size: 19px;
+
+	border-radius: 17px;
+}
+
+.modal-login__cancel-button {
+	position: relative;
+	width: 70px;
+
+	margin-top: 5px;
+	padding-left: 25px;
+
+	background-color: transparent;
+	border: none;
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: 3px;
+		left: 0;
+
+		width: 17px;
+		height: 12px;
+
+		background-image: url("../img/cancel-button.png");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 17px 12px;
+	}
+}
+
+.modal-login__registration-block {
+	display: none;
+}
+
+.modal-login__registration-block--opened {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
+
+	font-family: "MyriadProRegular", sans-serif;
+	font-size: 15px;
+
+	animation-name: from-right;
+	animation-duration: 0.6s;
+}
+
+.modal-login__button--form-registration {
+	width: 100%;
+	height: 34px;
+
+	font-size: 19px;
+
+	border-radius: 17px;
+}
+
+.modal-login__close-button {
+	position: absolute;
+	top: -16px;
+	right: -16px;
+
+	width: 24px;
+	height: 24px;
+	padding: 0;
+
+	font-size: 0;
+
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+
+	&::before,
+	&::after {
+		content: "";
+		position: absolute;
+		top: 10px;
+		left: 1px;
+
+		width: 20px;
+		height: 3px;
+
+		background-color: black;
+	}
+
+	&::before {
+		transform: rotate(-45deg);
+	}
+
+	&::after {
+		transform: rotate(45deg);
+	}
+}
+#account-login{
+	form{
+		margin-bottom: 30px;
+	}
+	.form-group{
+		margin-bottom: 10px;
+		label{
+			width: 150px;
+			display: inline-block;
+		}
+		.forgotten{
+			display: block;
+			font-size: 14px;
+			width: 345px;
+			text-align: right;
+			margin-top: 10px;
+		}
+	}
+	.btn.btn-primary{
+		padding: 5px 15px;
+	}
+}

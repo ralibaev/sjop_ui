@@ -1,0 +1,11 @@
+.page-main {
+	position: relative;
+	background-image: url("../img/usual-background.png");
+	background-repeat: no-repeat;
+	background-size: 70.5vw 52.2vw;
+	// background-position: -175px -125px;
+	background-position: -9.1vw -6.5vw;
+	&--without-background {background-image: none;}
+	@media (max-width: $tablet-max) {padding-top: 60px; z-index: 1;}
+	@media (max-width: $phone-max) {padding-top: 90px;}
+}

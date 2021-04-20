@@ -1,0 +1,187 @@
+.mobile-nav {
+	&--closed {display: none;}
+	&--opened {
+		position: absolute;
+		top: 60px;
+		right: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 320px;
+		padding: 20px;
+		box-sizing: border-box;
+		background-color: white;
+		box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+		z-index: 10;
+		overflow-y: scroll;
+		animation-name: from-right;
+		animation-duration: 0.6s;
+		@media (max-width: $phone-max) {top: 90px;}
+	}
+	&__catalog-block, &__info-block, &__menu-block {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		width: 100%;
+	}
+	&__item {
+		display: flex;
+		align-items: center;
+		width: 100%;
+		padding-left: 45px;
+		font-family: "MyriadProRegular", sans-serif;
+		font-size: 22px;
+		color: black;
+		text-decoration: none;
+	}
+}
+
+.mobile-nav__item {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	padding-left: 45px;
+
+	font-family: "MyriadProRegular", sans-serif;
+	font-size: 22px;
+	color: black;
+	text-decoration: none;
+}
+
+.mobile-nav__img-block {
+	height: 70px;
+	width: 70px;
+}
+
+.mobile-nav__login-block {
+	width: 100%;
+	margin-top: 17px;
+}
+
+.mobile-nav__login-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 40px;
+	box-sizing: border-box;
+
+	font-family: "MyriadProRegular", sans-serif;
+	font-size: 18px;
+	text-transform: uppercase;
+	color: white;
+	text-decoration: none;
+
+	background-color: $lighter-green;
+	border: 2px solid $lighter-green;
+	border-radius: 20px; 
+}
+
+.mobile-nav__catalog-block {
+	margin-top: 14px;
+}
+
+.mobile-nav__catalog {
+	height: 64px;
+}
+
+.mobile-nav hr {
+	// position: absolute;
+
+	display: block;
+	width: 100%;
+	height: 2px;
+	margin: 0;
+
+	background-color: $gray;
+	border: none;
+}
+
+.mobile-nav__first-line {
+	top: 225px;
+}
+
+.mobile-nav__info-block {
+	height: 110px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	box-sizing: border-box;
+}
+
+.mobile-nav__town {
+	height: 50%;
+}
+
+.mobile-nav__phone {
+	height: 50%;
+}
+
+.mobile-nav__second-line {
+	top: 335px;
+}
+
+.mobile-nav__menu-block {
+	height: 208px;
+	padding-top: 18px;
+	padding-bottom: 8px;
+	box-sizing: border-box;
+}
+
+.mobile-nav__menu-block .mobile-nav__item {
+	height: 25%;
+}
+
+.mobile-nav__socials {
+	align-self: flex-start;
+	margin-top: 25px;
+}
+
+.mobile-nav__socials-list {
+	display: flex;
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+.mobile-nav__socials-item a {
+	position: relative;
+
+	display: block;
+	width: 50px;
+	height: 50px;
+	margin-right: 10px;
+
+	font-size: 0;
+	letter-spacing: 0;
+
+	&::before {
+		content: "";
+		// position: absolute;
+
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+}
+
+.mobile-nav__socials-item--vk a {
+	&::before {
+		display: block;
+		width: 50px;
+		height: 50px;
+
+		background-image: url("../img/vk-icon.svg");
+		background-size: 40px;
+	}
+}
+
+.mobile-nav__socials-item--whatsapp a {
+	&::before {
+		display: block;
+		width: 50px;
+		height: 50px;
+
+		background-image: url("../img/whatsapp-icon.svg");
+		background-size: 40px;
+	}
+}

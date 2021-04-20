@@ -1,0 +1,77 @@
+.advantages {
+	&__container {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		padding-top: 100px;
+		padding-bottom: 50px;
+	}
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		@media (max-width: $tablet-max) {flex-wrap: wrap; align-content: space-between;}
+	}
+	&__item {
+		display: block;
+		width: 23%;
+		height: 400px;
+		padding: 25px;
+		box-sizing: border-box;
+		font-family: "MyriadProBold", sans-serif;
+		background-color: $main-green;
+		background-repeat: no-repeat;
+		overflow: hidden;
+		@media (max-width: $container-max) {height: 23.3vw;}
+		@media (max-width: $laptop-max) {padding: 20px;}
+		@media (max-width: $tablet-max) {width: calc((100% - 20px) / 2); margin-bottom: 20px;}
+		@media (max-width: $phone-max) {width: 100%; height: 300px;}
+		&:nth-child(1) {
+			background: url("../img/icon-exchange.svg") no-repeat bottom -10px right 10px/65% $main-green;
+			@media (max-width: $tablet-max) {
+				background-size: 40%;
+			}
+		}
+		&:nth-child(2) {
+			background: url("../img/icon-delivery.svg") no-repeat bottom 10px right 10px/75% $main-green;
+			@media (max-width: $tablet-max) {
+				background-size: 50%;
+			}
+		}
+		&:nth-child(3) {
+			background: url("../img/icon-manufacturers.svg") no-repeat bottom 0 right 0/75% $main-green;
+			@media (max-width: $tablet-max) {
+				background-size: 45%;
+			}
+		}
+		&:nth-child(4) {
+			background: url("../img/icon-blog.svg") no-repeat bottom -140% right -70%/90% $main-green;
+			@media (max-width: $tablet-max) {
+				background: url("../img/icon-blog.svg") no-repeat bottom 200% right -30%/60% $main-green;
+			}
+		}
+	}
+	&__block-text {
+		display: block;
+		margin: 0;
+		min-height: 115px;
+		font-size: 40px;
+		color: white;
+		@media (max-width: $container-max) {min-height: 6.7vw; font-size: 2.1vw;}
+		@media (max-width: $scaf) {font-size: 2vw;}
+		@media (max-width: $tablet-max) {min-height: auto; font-size: 24px;}
+	}
+	&__block-link {
+		color: white;
+		font-size: 20px;
+		&:hover {
+			text-decoration: none;
+		}
+		@media (max-width: $container-max) {font-size: 1.2vw;}
+		@media (max-width: $tablet-max) {font-size: 18px;}
+	}
+}

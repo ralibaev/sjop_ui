@@ -1,0 +1,29 @@
+.swiper-viewport{
+	box-shadow: none!important;
+	background: transparent!important;
+	border: none!important;
+
+}
+.swiper-button-next{
+	&::before{
+		content: ""!important;
+		top: 0;
+		background-size: 10px;
+		background-repeat: no-repeat;
+		background-image: url("../img/next-arrow.svg");
+		display: block;
+	}
+}
+.swiper-button-prev{
+	&::before{
+		content: ""!important;
+		top: 0;
+		background-size: 10px;
+		background-repeat: no-repeat;
+		background-image: url("../img/prev-arrow.svg");
+		display: block;
+	}
+}
+.swiper-container{
+	padding-left: 25px!important;
+}

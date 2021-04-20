@@ -1,0 +1,49 @@
+.about-company {
+	background-color: $another-gray;
+}
+
+.about-company__container {
+	padding-top: 80px;
+	padding-bottom: 80px;
+
+	@media (max-width: $laptop-max) {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+
+	@media (max-width: $scaf) {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+
+	@media (max-width: $phone-max) {
+		padding-top: 10px;
+		padding-bottom: 20px;
+	}
+}
+
+.about-company h2 {
+	font-family: "MyriadProBold", sans-serif;
+	font-size: 35px;
+	text-transform: uppercase;
+
+	@media (max-width: $desktop-max) {
+		font-size: 32px;
+	}
+
+	@media (max-width: $laptop-max) {
+		font-size: 28px;
+	}
+
+	@media (max-width: $scaf) {
+		font-size: 24px;
+	}
+
+	@media (max-width: $tablet-max) {
+		font-size: 20px;
+	}
+
+	@media (max-width: $phone-max) {
+		font-size: 16px;
+	}
+}

@@ -1,0 +1,128 @@
+// .product-options {
+// 	padding-top: 70px;
+// 	padding-bottom: 70px;
+
+// 	@media (max-width: $container-max) {
+// 		padding-top: 4vw;
+// 		padding-bottom: 4vw;
+// 	}
+// }
+
+// .product-options__controls {
+// 	font-family: "MyriadProBold", sans-serif;
+// 	font-size: 30px;
+
+// 	@media (max-width: $container-max) {
+// 		font-size: 25px;
+// 	}
+
+// 	@media (max-width: $tablet-max) {
+// 		font-size: 20px;
+// 	}
+// }
+
+// .product-options__input {
+// 	position: absolute;
+// 	width: 1px;
+// 	height: 1px;
+// 	margin: -1px;
+// 	border: 0;
+// 	padding: 0;
+	
+// 	white-space: nowrap;
+// 	clip-path: inset(100%);
+// 	clip: rect(0 0 0 0);
+// 	overflow: hidden;
+// 	visibility: hidden;
+// }
+
+// .product-options__label {
+// 	padding: 1px 15px;
+// 	margin-right: 15px;
+
+// 	@media (max-width: $container-max) {
+// 		padding: 0.2vw 0.9vw;
+// 		margin-right: 0.9vw;
+// 	}
+
+// 	@media (max-width: $tablet-max) {
+		
+// 	}
+// }
+
+// .product-options__input:checked + .product-options__label {
+// 	color: white;
+// 	background-color: $main-green;
+// }
+
+// .product-options__underline {
+// 	position: absolute;
+// 	left: 0;
+// 	width: 100vw;
+// 	height: 2px;
+// 	margin-top: 1px;
+	
+// 	background-color: $main-green;
+// 	border: none;
+// }
+
+// .product-options__input--description:checked~.product-options__description-text,
+// .product-options__input--reviews:checked~.product-options__reviews-text,
+// .product-options__input--characteristics:checked~.product-options__characteristics-text,
+// .product-options__input--instructions:checked~.product-options__instructions-text {
+// 	display: block;
+// }
+
+// .product-options__text {
+// 	display: none;
+// 	padding-top: 30px;
+
+// 	font-family: "MyriadProRegular", sans-serif;
+// 	font-size: 20px;
+// }
+
+// .product-options__reviews-list {
+// 	margin: 0;
+// 	padding: 0;
+
+// 	list-style: none;
+// }
+
+// .product-options__reviews-list ol,
+// .product-options__reviews-list ul {
+// 	padding: 0;
+
+// 	list-style-position: inside;
+// }
+
+// .product-options__reviews-item {
+// 	margin-bottom: 50px;
+// }
+
+// .product-options__write-review {
+// 	width: 30%;
+// } 
+
+// .product-options__characteristics-text {
+// 	line-height: 27px;
+// }
+
+// .product-options__characteristics-text b {
+// 	font-family: "MyriadProBold", sans-serif;
+// }
+
+// .product-options__instructions-text {
+// 	padding-top: 70px;
+
+// 	@media (max-width: $tablet-max) {
+// 		padding-top: 30px;
+// 	}
+// }
+
+// .product-options__read-instruction {
+// 	width: 50%;
+
+// 	@media (max-width: $tablet-max) {
+// 		font-size: 14px;
+// 	}
+// }

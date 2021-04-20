@@ -1,0 +1,294 @@
+// .price {
+// 	background-color: $gray;
+// 	background-image: url("../img/usual-background.png");
+// 	background-repeat: no-repeat;
+// 	background-position: 900px 700px;
+// }
+
+// .price__container {
+
+// 	@media (max-width: $phone-max) {
+// 		padding: 0;
+// 		width: 100vw;
+// 	}
+// }
+
+// .price__title {
+// 	@media (max-width: $phone-max) {
+// 		padding-left: $phone-paddings;
+// 		padding-right: $phone-paddings;
+// 	}
+// }
+
+// .price__main-block {
+// 	display: flex;
+// 	flex-direction: row;
+// 	justify-content: space-between;
+// 	align-items: flex-start;
+// 	margin-bottom: 115px;
+
+// 	@media (max-width: $laptop-max) {
+// 		margin-bottom: 80px;
+// 	}
+
+// 	@media (max-width: $scaf) {
+// 		margin-bottom: 70px;
+// 	}
+
+// 	@media (max-width: $tablet-max) {
+// 		flex-direction: column;
+// 	}
+
+// 	@media (max-width: $phone-max) {
+// 		margin-bottom: 0;
+// 	}
+// }
+
+// .price__left-block {
+// 	width: 50%;
+
+// 	@media (max-width: $tablet-max) {
+// 		width: 100%;
+// 	}
+// }
+
+// .price__document-block {
+// 	display: flex;
+// 	flex-direction: column;
+// 	width: 100%;
+// 	margin-bottom: 10px;
+// 	box-sizing: border-box;
+
+// 	background-color: white;
+// }
+
+// .price__document-top {
+// 	display: flex;
+// 	justify-content: space-between;
+// 	align-items: center;
+// 	height: 65px;
+// 	padding-right: 35px;
+
+// 	@media (max-width: $laptop-max) {
+// 		height: 60px;
+// 	}
+
+// 	@media (max-width: $phone-max) {
+// 		padding-right: $phone-paddings;
+// 		height: 50px;
+// 	}
+// }
+
+// .price__document-title {
+// 	position: relative;
+// 	width: 93%;
+// 	height: 100%;
+// 	padding: 0;
+// 	padding-left: 50px;
+// 	box-sizing: border-box;
+
+// 	font-family: "MyriadProBold", sans-serif;
+// 	font-size: 25px;
+// 	text-align: left;
+
+// 	border: none;
+// 	background-color: transparent;
+
+// 	&::after {
+// 		content: "";
+// 		position: absolute;
+// 		top: 27px;
+// 		right: 27px;
+
+// 		width: 24px;
+// 		height: 12px;
+
+// 		background-image: url("../img/catalog-arrow.png");
+// 		background-position: center;
+// 		background-repeat: no-repeat;
+// 		background-size: 21px 13px;
+
+// 		@media (max-width: $phone-max) {
+// 			top: 22px;
+// 			right: 15px;
+// 			width: 12px;
+// 			height: 8px;
+
+// 			background-size: 12px 8px;
+// 		}
+// 	}
+
+// 	&:hover {
+// 		opacity: 0.7;
+// 	}
+
+// 	&:active {
+// 		opacity: 0.5;
+// 	}
+
+// 	@media (max-width: $laptop-max) {
+// 		font-size: 20px;
+// 	}
+
+// 	@media (max-width: $phone-max) {
+// 		padding-left: $phone-paddings;
+// 	}
+
+// 	@media (max-width: $phone-max) {
+// 		font-size: 15px;
+// 	}
+// }
+
+// .price__download-link {
+// 	position: relative;
+
+// 	width: 33px;
+// 	height: 33px;
+
+// 	background-image: url("../img/download.svg");
+// 	background-size: 33px;
+// 	background-position: center;
+// 	background-repeat: no-repeat;
+
+// 	@media (max-width: $phone-max) {
+// 		width: 25px;
+// 		height: 25px;
+
+// 		background-size: 25px;
+// 	}
+// }
+
+// .price__hidden-block {
+// 	display: none;
+// }
+
+// .price__hidden-block--open {
+// 	display: flex;
+// }
+
+// .price__document-list {
+// 	margin: 0;
+// 	padding: 0;
+// 	margin-left: 50px;
+
+// 	list-style: none;
+
+// 	@media (max-width: $phone-max) {
+// 		margin-left: $phone-paddings;
+// 		margin-right: $phone-paddings;
+// 	}
+// }
+
+// .price__document-item {
+// 	margin-bottom: 25px;
+// }
+
+// .price__document-item a {
+// 	color: $main-green;
+// 	text-decoration: none;
+
+// 	@media (max-width: $laptop-max) {
+// 		font-size: 16px;
+// 	}
+
+// 	@media (max-width: $phone-max) {
+// 		font-size: 13px;
+// 	}
+// }
+
+// .price__document-name {
+// 	display: flex;
+// 	justify-content: flex-start;
+// 	align-items: center;
+// 	width: 93%;
+// 	height: 100%;
+// 	padding: 0;
+// 	padding-left: 50px;
+// 	box-sizing: border-box;
+
+// 	font-family: "MyriadProBold", sans-serif;
+// 	font-size: 25px;
+// 	text-align: left;
+
+// 	@media (max-width: $laptop-max) {
+// 		font-size: 20px;
+// 	}
+
+// 	@media (max-width: $phone-max) {
+// 		padding-left: $phone-paddings;
+// 		font-size: 15px;
+// 	}
+// }
+
+// .price__right-block {
+// 	display: flex;
+// 	flex-direction: column;
+// 	align-items: center;
+// 	width: 48%;
+// 	padding: 65px 60px;
+// 	box-sizing: border-box;
+
+// 	background-color: white;
+
+// 	@media (max-width: $scaf) {
+// 		padding: 55px 50px;
+// 	}
+
+// 	@media (max-width: $tablet-max) {
+// 		width: 100%;
+// 		margin-top: 50px;
+// 	}
+
+// 	@media (max-width: $phone-max) {
+// 		margin-top: 0;
+// 		padding: 20px;
+// 		background-color: transparent;
+// 	}
+// }
+
+// .price__right-info {
+// 	display: flex;
+// 	justify-content: space-between;
+// 	align-items: center;
+
+// 	@media (max-width: $phone-max) {
+// 		margin-top: 10px;
+// 	}
+// }
+
+// .price__img-block {
+// 	width: 22%;
+
+// 	@media (max-width: $phone-max) {
+// 		display: none;
+// 	}
+// }
+
+// .price__excel-info {
+// 	width: 74%;
+
+// 	@media (max-width: $phone-max) {
+// 		width: 240px;
+
+// 		text-align: center;
+// 	}
+// }
+
+// .price__download-all {
+// 	width: 385px;
+// 	margin-top: 45px;
+
+// 	@media (max-width: $scaf) and (min-width: $laptop-min) {
+// 		width: 300px;
+// 		margin-top: 40px;
+// 	}
+
+// 	@media (max-width: $phone-max) {
+// 		margin-top: 0;
+// 		width: 220px;
+// 		height: 40px;
+// 		order: -1;
+
+// 		font-size: 15px;
+// 	}
+// }

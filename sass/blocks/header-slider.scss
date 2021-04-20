@@ -1,0 +1,111 @@
+.header-slider {
+	height: 570px;
+	background: url("../img/slider-background.png") no-repeat left;
+	@media (max-width: $laptop-max) {height: 500px;}
+	@media (max-width: $scaf) {height: 400px;}
+	@media (max-width: $tablet-max) {display: none;}
+	&__container, &__list, &__item {
+		height: 100%;
+	}
+	&__container, &__list {
+		position: relative;
+	}
+	&__button {
+		position: absolute;
+		top: calc(50% - 20px);
+		width: 24px;
+		height: 40px;
+		padding: 0;
+		border: none;
+		cursor: pointer;
+		&:hover {opacity: 0.7;}
+		&:active {opacity: 0.5;}
+		&--prev {
+			left: 5px;
+			background: url("../img/left-arrow.svg") no-repeat center/40px;
+		}
+		&--next {
+			right: 5px;
+			background: url("../img/right-arrow.svg") no-repeat center/40px;
+		}
+	}
+	&__list, &__item {
+		display: flex;
+  	justify-content: space-between;
+	}
+	&__list {
+		overflow: hidden;
+	}
+  &__item {
+		position: absolute;
+		width: 100%;
+		padding: 0 50px;
+		box-sizing: border-box;
+		transition: all .3s ease;
+		&--no-transition {
+			transition-duration: 0s;
+		}
+  }
+  &__info {
+    display: flex;
+  	flex-direction: column;
+  	width: 45%;
+  }
+	&__title, &__middle-text, &__bottom-text, &__link {
+		font-family: "Montserrat", arial;
+  	font-weight: 600;
+	}
+  &__title {
+  	font-size: 50px;
+  	margin-top: 47px;
+  	@media (max-width: $laptop-max) {font-size: 40px;}
+  	@media (max-width: $scaf) {font-size: 36px;}
+  }
+  &__middle-text {
+  	font-size: 20px;
+  	@media (max-width: $scaf) {font-size: 16px;}
+  }
+  &__bottom-text {
+  	font-size: 16px;
+  	@media (max-width: $scaf) {font-size: 12px;}
+  }
+  &__link {
+  	margin-top: 67px;
+  	width: 400px;
+  	height: 72px;
+  	border-radius: 36px;
+  	@media (max-width: $scaf) {
+  		width: 300px;
+  		height: 50px;
+  		margin: 30px 0 0 20px;
+  		font-size: 16px;
+  	}
+  }
+  &__img-block {
+  	width: 33%;
+		margin: auto 0;
+		line-height: 0;
+  }
+	&__button-list {
+		position: relative;
+		bottom: 35px;
+		display: flex;
+		justify-content: center;
+		height: 35px;
+	}
+	&__button-item {
+		width: 25px;
+    height: 25px;
+    margin: 0 10px;
+    padding: 0;
+		border: none;
+		border-radius: 50%;
+		background-color: $main-green;
+		opacity: 0.7;
+		cursor: pointer;
+		z-index: 10;
+		&--active {
+			opacity: 1;
+		}
+	}
+}

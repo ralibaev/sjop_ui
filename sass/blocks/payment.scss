@@ -1,0 +1,243 @@
+// .payment__container {
+// 	display: flex;
+// 	flex-direction: column;
+// }
+
+// .payment__title {
+// 	margin-bottom: 0;
+// }
+
+// .payment__block {
+// 	padding-top: 50px;
+// 	padding-bottom: 50px;
+
+// 	@media (max-width: $laptop-max) {
+// 		padding-top: 30px;
+// 		padding-bottom: 30px;
+// 	}
+// }
+
+// .payment__block-title {
+// 	margin-top: 0;
+// }
+
+// .payment__text,
+// .payment__list {
+// 	margin: 0;
+// 	padding: 0;
+
+// 	font-family: "MyriadProRegular", sans-serif;
+// 	font-size: 34px;
+// 	line-height: 50px;
+
+// 	@media (max-width: $laptop-max) {
+// 		font-size: 22px;
+// 		line-height: 32px;
+// 	}
+
+// 	@media (max-width: $scaf) {
+// 		font-size: 20px;
+// 		line-height: 30px;
+// 	}
+
+// 	@media (max-width: $tablet-max) {
+// 		font-size: 18px;
+// 		line-height: 26px;
+// 	}
+
+// 	@media (max-width: $phone-max) {
+// 		font-size: 15px;
+// 		line-height: 22px;
+// 	}
+// }
+
+// .payment__list {
+// 	&--first {
+// 		list-style: none;
+// 	}
+
+// 	&--top {
+// 		list-style: none;
+// 	}
+
+// 	&--center {
+// 		list-style-position: inside;
+// 	}
+
+// 	&--bottom {
+// 		list-style-position: inside;
+// 	}
+// }
+
+// .payment__list--top {
+// 	margin-top: 50px;
+
+// 	@media (max-width: $laptop-max) {
+// 		margin-top: 40px;
+// 	}
+
+// 	@media (max-width: $scaf) {
+// 		margin-top: 30px;
+// 	}
+// }
+
+// .payment__list--top li:nth-child(1) {
+// 	position: relative;
+
+// 	&::after {
+// 		content: "";
+// 		position: absolute;
+// 		top: -8px;
+
+// 		width: 150px;
+// 		height: 62px;
+// 		margin-left: 20px;
+
+// 		background-image: url("../img/payment1.png");
+// 		background-position: center;
+// 		background-repeat: no-repeat;
+// 		background-size: 150px 62px;
+
+// 		@media (max-width: $laptop-max) {
+// 			width: 112px;
+// 			height: 46px;
+
+// 			background-size: 112px 46px;
+// 		}
+
+// 		@media (max-width: $scaf) {
+// 			width: 102px;
+// 			height: 42px;
+
+// 			background-size: 102px 42px;
+// 		}
+
+// 		@media (max-width: $tablet-max) {
+// 			width: 92px;
+// 			height: 38px;
+// 			background-size: 92px 38px;
+// 		}
+// 	}
+// }
+
+// .payment__list--top li:nth-child(2) {
+// 	position: relative;
+
+// 	&::after {
+// 		content: "";
+// 		position: absolute;
+
+// 		width: 74px;
+// 		height: 48px;
+// 		margin-left: 30px;
+
+// 		background-image: url("../img/payment2.png");
+// 		background-position: center;
+// 		background-repeat: no-repeat;
+// 		background-size: 74px 48px;
+
+// 		@media (max-width: $laptop-max) {
+// 			width: 56px;
+// 			height: 36px;
+
+// 			background-size: 56px 36px;
+// 		}
+
+// 		@media (max-width: $scaf) {
+// 			width: 50px;
+// 			height: 32px;
+
+// 			background-size: 50px 32px;
+// 		}
+
+// 		@media (max-width: $tablet-max) {
+// 			width: 46px;
+// 			height: 30px;
+
+// 			background-size: 46px 30px;
+// 		}
+// 	}
+// }
+
+// .payment__list--top li:nth-child(3) {
+// 	position: relative;
+
+// 	&::after {
+// 		content: "";
+// 		position: absolute;
+
+// 		width: 89px;
+// 		height: 54px;
+// 		margin-left: 40px;
+
+// 		background-image: url("../img/payment3.png");
+// 		background-position: center;
+// 		background-repeat: no-repeat;
+// 		background-size: 89px 54px;
+
+// 		@media (max-width: $laptop-max) {
+// 			width: 66px;
+// 			height: 40px;
+
+// 			background-size: 66px 40px;
+// 		}
+
+// 		@media (max-width: $scaf) {
+// 			width: 60px;
+// 			height: 36px;
+
+// 			background-size: 60px 36px;
+// 		}
+
+// 		@media (max-width: $tablet-max) {
+// 			width: 54px;
+// 			height: 32px;
+
+// 			background-size: 54px 32px;
+// 		}
+// 	}
+// }
+
+// .payment hr {
+// 	height: 10px;
+// 	margin: 0;
+
+// 	background-color: $gray;
+// 	border: none;
+
+// 	@media (max-width: $laptop-max) {
+// 		height: 7px;
+// 	}
+// }
+
+// .payment__list li {
+// 	margin-top: 10px;
+// 	margin-bottom: 10px;
+// }
+
+// .payment__notification {
+// 	font-size: 30px;
+// 	line-height: 40px;
+
+// 	@media (max-width: $laptop-max) {
+// 		font-size: 20px;
+// 		line-height: 26px;
+// 	}
+
+// 	@media (max-width: $scaf) {
+// 		font-size: 18px;
+// 		line-height: 24px;
+// 	}
+
+// 	@media (max-width: $tablet-max) {
+// 		font-size: 16px;
+// 		line-height: 21px;
+// 	}
+
+// 	@media (max-width: $phone-max) {
+// 		font-size: 14px;
+// 		line-height: 18px;
+// 	}
+// }
+
+// .payment__list--center {}

@@ -1,0 +1,117 @@
+.visually-hidden:not(:focus):not(:active) {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+a, button {outline: none;}
+.container {
+	max-width: 1620px;
+	width: calc(100% - 100px);
+	margin: 0 auto;
+	padding-left: $desktop-paddings;
+	padding-right: $desktop-paddings;
+	@media (max-width: $tablet-max) {
+		width: calc(100% - 60px);
+		padding-left: $tablet-paddings;
+		padding-right: $tablet-paddings;
+	}
+	@media (max-width: $phone-max) {
+		width: calc(100% - 40px);
+		padding-left: $phone-paddings;
+		padding-right: $phone-paddings;
+	}
+}
+body {
+	font-family: "MyriadProRegular", sans-serif;
+	font-size: 20px;
+	letter-spacing: 0.045em;
+}
+.page-main {
+	display: flex;
+	flex-direction: column;
+}
+h1, h2, h3 {font-family: "MyriadProBold", sans-serif;}
+h1, h2 {
+	font-size: 50px;
+	@media (max-width: $container-max) {font-size: 40px;}
+	@media (max-width: $laptop-max) {font-size: 32px;}
+	@media (max-width: $scaf) {font-size: 28px;}
+	@media (max-width: $tablet-max) {font-size: 20px;}
+	@media (max-width: $phone-max) {font-size: 15px;}
+}
+h1 {text-transform: uppercase;}
+h3 {
+	font-size: 36px;
+	@media (max-width: $container-max) {font-size: 28px;}
+	@media (max-width: $laptop-max) {font-size: 24px;}
+	@media (max-width: $scaf) {font-size: 22px;}
+	@media (max-width: $tablet-max) {font-size: 20px;}
+	@media (max-width: $phone-max) {font-size: 15px;}
+}
+p, span, ol, ul {
+	font-family: "MyriadProRegular", sans-serif;
+	font-size: 25px;
+	@media (max-width: $laptop-max) {font-size: 20px;}
+	@media (max-width: $tablet-max) {font-size: 18px;}
+	@media (max-width: $phone-max) {font-size: 15px;}
+}
+.link--white,
+.link--green {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 65px;
+	box-sizing: border-box;
+	font-family: 'Montserrat', arial;
+	font-weight: 500;
+	font-size: 24px;
+	text-transform: uppercase;
+	text-decoration: none;
+	border-radius: 33px;
+	transition: all .3s ease-in-out;
+	&:active {opacity: 0.7;}
+	@media (max-width: $laptop-max) {height: 60px; font-size: 22px;}
+	@media (max-width: $scaf) {height: 55px; font-size: 20px;}
+	@media (max-width: $phone-max) {height: 40px; font-size: 16px;}
+}
+.link--green {
+	color: white;
+	border: 0.16vw solid $main-green;
+	background-color: $main-green;
+	&:hover, &:active {color: black; background-color: white;}
+}
+.link--white {
+	color: $main-green;
+	border: 0.16vw solid white;
+	background-color: white;
+	&:hover, &:active {
+		color: white;
+		background-color: $main-green;
+		border: 0.16vw solid $main-green;
+	}
+}
+@keyframes from-right {
+	0% { transform: translateX(100%); }
+	100% { transform: translateX(0); }
+}
+@keyframes from-left {
+	0% { transform: translateX(-100%); }
+	100% { transform: translateX(0); }
+}
+@keyframes from-top {
+	0% { transform: translateY(-2000px); }
+	70% { transform: translateY(30px); }
+	90% { transform: translateY(-10px); }
+	100% { transform: translateY(0); }
+}

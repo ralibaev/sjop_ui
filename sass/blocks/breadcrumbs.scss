@@ -1,0 +1,43 @@
+.breadcrumbs {
+	display: flex;
+	align-items: center;
+	min-height: 33px;
+	padding-bottom: 5px;
+	box-sizing: border-box;
+	&--tablet-gray {
+		@media (max-width: $tablet-max) {background-color: $gray;}
+		@media (max-width: $phone-max) {height: auto; min-height: 50px;}
+	}
+	@media (max-width: $phone-max) {height: auto; min-height: 50px;}
+	&--about-company .breadcrumbs__item a {
+		@media (min-width: $tablet-min) {
+			color: white;
+			&:hover {&::after {color: white;}}
+		}
+	}
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0;
+		padding: 0;
+		margin-left: 4px;
+		list-style: none;
+	}
+	&__item a {
+		font-size: 18px;
+		color: $dark-gray;
+		text-decoration: none;
+		&::after {content: "/"; margin: 0 5px;}
+		&:hover {
+			color: $main-green;
+			&:after {color: $dark-gray;}
+		}
+		@media (max-width: $tablet-max) {font-size: 16px;}
+		@media (max-width: $phone-max) {font-size: 12px;}
+	}
+	&__item--active a {
+		pointer-events: none;
+		cursor: default;
+		&::after {content: ""; margin: 0;}
+	}
+}

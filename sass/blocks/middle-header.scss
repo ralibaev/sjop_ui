@@ -1,0 +1,82 @@
+.middle-header {
+	height: 60px;
+	font-family: "Montserrat", arial;
+	font-size: 20px;
+	font-weight: 400;
+	color: white;
+	background-color: $main-green;
+	@media (max-width: $laptop-max) {font-size: 18px;}
+	@media (max-width: $scaf) {height: 55px; font-size: 16px;}
+	@media (max-width: $tablet-max) {height: 0;	background-color: transparent;}
+	&__container {
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 100%;
+	}
+	&__logo a {
+		display: block;
+		line-height: 0;
+	}
+	&__logo-img {
+		height: 40px;
+		@media (max-width: $scaf) {width: 128px; height: 36px;}
+		@media (max-width: $tablet-max) {
+			position: absolute;
+			top: 12px;
+			left: 30px;
+		}
+		@media (max-width: $phone-max) {top: 13px; width: 91px;}
+	}
+	&__nav {
+		margin-left: 80px;
+		@media (max-width: $laptop-max) {
+			margin-left: 0;
+		}
+	}
+	&__phone {
+		position: relative;
+		padding-left: 45px;
+		&::before {
+			content: "";
+			position: absolute;
+			top: -7px;
+			left: 0;
+			width: 35px;
+			height: 36px;
+			background-image: url("../img/phone.png");
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: auto 36px;
+			@media (max-width: $scaf) {
+				top: -8px;
+				background-size: auto 30px;
+			}
+		}
+		@media (max-width: $tablet-max) {display: none;}
+	}
+	&__phone-number {
+		display: inline-block;
+		color: white;
+		text-decoration: none;
+		font-size: 18px;
+		&::after {
+			content: "";
+			display: block;
+			width: 0%;
+			height: 2px;
+			background-color: white;
+			transition: width .3s ease-in-out;
+		}
+		&:hover {
+			&::after {
+				width: 100%;
+			}
+		}
+		&:active {
+			opacity: 0.7;
+		}
+		@media (max-width: $scaf) {font-size: 16px;}
+	}
+}

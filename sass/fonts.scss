@@ -1,0 +1,49 @@
+@font-face {
+	font-family: "MyriadProRegular", sans-serif;
+	src: local('Myriad Pro Regular'), local('Myriad-Pro-Regular'),
+		url('../fonts/MyriadPro-Regular/MyriadPro-Regular.woff2') format('woff2'),
+		url('../fonts/MyriadPro-Regular/MyriadPro-Regular.woff') format('woff'),
+		url('../fonts/MyriadPro-Regular/MyriadPro-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "MyriadProBold", sans-serif;
+	src: local('Myriad Pro Bold'), local('Myriad-Pro-Bold'),
+		url('../fonts/MyriadPro-Bold/MyriadPro-Bold.woff2') format('woff2'),
+		url('../fonts/MyriadPro-Bold/MyriadPro-Bold.woff') format('woff'),
+		url('../fonts/MyriadPro-Bold/MyriadPro-Bold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Montserrat", arial;
+	src: local('Montserrat'), local('Montserrat-Regular'),
+		url('../fonts/montserrat/montserrat.woff2') format('woff2'),
+		url('../fonts/montserrat/montserrat.woff') format('woff'),
+		url('../fonts/montserrat/montserrat.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Myriad Pro', sans-serif;
+	src: local('Myriad Pro Regular'), local('Myriad-Pro-Regular'),
+		url('/fonts/MyriadPro-Regular/MyriadPro-Regular.woff2') format('woff2'),
+		url('/fonts/MyriadPro-Regular/MyriadPro-Regular.woff') format('woff'),
+		url('/fonts/MyriadPro-Regular/MyriadPro-Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Myriad Pro', sans-serif;
+	src: local('Myriad Pro Bold'), local('Myriad-Pro-Bold'),
+		url('/fonts/MyriadPro-Bold/MyriadPro-Bold.woff2') format('woff2'),
+		url('/fonts/MyriadPro-Bold/MyriadPro-Bold.woff') format('woff'),
+		url('/fonts/MyriadPro-Bold/MyriadPro-Bold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+}

@@ -1,0 +1,103 @@
+.main-nav {
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin: 0;
+		padding: 0;
+		width: 710px;
+		list-style: none;
+		@media (max-width: $laptop-max) {width: 600px;}
+		@media (max-width: $scaf) {width: 500px;}
+		@media (max-width: $phone-max) {display: none;}
+	}
+	&__toggle {
+		position: absolute;
+		top: 16px;
+		right: 30px;
+		width: 28px;
+		height: 28px;
+		padding: 0;
+		background-color: transparent;
+		border: none;
+		z-index: 2;
+		&::before,
+		&::after {
+			content: "";
+			position: absolute;
+			top: 12px;
+			right: 0;
+			display: block;
+			width: 100%;
+			height: 3px;
+			background-color: #000000;
+			box-shadow: 0 7px 0 0 #000000, 0 -7px 0 0 #000000;
+			@media (max-width: $phone-max) {
+				top: 8px;
+				height: 2px;
+				box-shadow: 0 5px 0 0 #000000, 0 -5px 0 0 #000000;
+			}
+		}
+		&:hover {
+			opacity: 0.5;
+		}
+		&:active,
+		&:focus {
+			outline: none;
+		}
+		@media (min-width: $laptop-min) {display: none;}
+		@media (max-width: $phone-max) {
+			top: 20px;
+			width: 20px;
+			height: 20px;
+		}
+		&--closed::before,
+		&--closed::after {
+			content: "";
+			position: absolute;
+			top: 12px;
+			right: 0;
+			display: block;
+			width: 28px;
+			height: 3px;
+			background-color: #000000;
+			@media (max-width: $phone-max) {
+				top: 8px;
+				width: 20px;
+				height: 2px;
+			}
+		}
+		&--opened::before, &--opened::after {box-shadow: none;}
+		&--opened::before {transform: rotate(-45deg);}
+		&--opened::after {transform: rotate(45deg);}
+	}
+	&__item a {
+		display: inline-block;
+		color: white;
+		text-decoration: none;
+		font-size: 20px;
+		font-weight: 400;
+		&::after {
+			content: "";
+			display: block;
+			width: 0%;
+			height: 2px;
+			background-color: white;
+			transition: width .3s ease-in-out;
+		}
+		&:hover {
+			&::after {
+				width: 100%;
+			}
+		}
+		&:active {
+			opacity: 0.7;
+		}
+		@media (max-width: $scaf) {
+			font-size: 16px;
+		}
+	}
+	&__mobile {
+		@media (min-width: $laptop-min) {display: none;}
+	}
+}
