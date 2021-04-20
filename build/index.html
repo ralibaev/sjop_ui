@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Главная Riadent</title>
+	<link rel="preload" href="fonts/MyriadPro-Regular/MyriadPro-Regular.woff2" as="font">
+	<link rel="preload" href="fonts/MyriadPro-Bold/MyriadPro-Bold.woff2" as="font">
+	<link rel="preload" href="fonts/montserrat/montserrat.woff2" as="font">
+	<link rel="stylesheet" href="css/stylesheet.css">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="//api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"></script>
+</head>
+<body>
+	<header class="page-header">
+		<div class="top-header">
+			<div class="container top-header__container">
+				<div class="top-header__adress">
+					<select class="top-header__city" name="city-select" id="">
+						<option id="ufa" value="Ufa">г.Уфа ул.Кавказская д.6/6</option>
+						<option id="ster" value="Sterlitamak">г.Стерлитамак, улица Курчатова д.18</option>
+						<option id="okt" value="Oktyabrskiy">г.Октябрьский, проспект Ленина д.51/1</option>
+						<option id="neft" value="Neftekamsk">г.Нефтекамск, проспект Юбилейный д.11а</option>
+						<option id="sibay" value="Sibay">г.Сибай, проспект Горняков д.36</option>
+					</select>
+				</div>
+
+				<div class="top-header__time">
+					<a href="#">Мы работаем: Понедельник - Суббота: с 9:00 до 21:00</a>
+				</div>
+
+				<div class="top-header__feedback">
+					<a href="#" class="link--green top-header__feedback-link">Обратная связь</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="middle-header">
+			<div class="container middle-header__container">
+				<div class="middle-header__logo">
+					<a href="#">
+						<picture>
+							<source media="(max-width: 1023px)" srcset="img/logo-mobile.svg">
+							<img class="middle-header__logo-img" src="img/logo.svg" alt="Логотип Riamed Group">
+						</picture>
+					</a>
+				</div>
+
+				<nav class="middle-header__nav main-nav main-nav--closed">
+					<button class="main-nav__toggle main-nav__toggle--closed" type="button"><span class="visually-hidden main-nav__toggle-bar">Меню</span></button>
+					<ul class="main-nav__list">
+						<li class="main-nav__item"><a href="#">Контакты</a></li>
+						<li class="main-nav__item"><a href="#">Каталог</a></li>
+						<li class="main-nav__item"><a href="#">Прайс-лист</a></li>
+						<li class="main-nav__item"><a href="#">Доставка</a></li>
+						<li class="main-nav__item"><a href="#">Отзывы</a></li>
+					</ul>
+
+					<div class="main-nav__mobile mobile-nav mobile-nav--closed">
+						<div class="mobile-nav__img-block">
+							<img src="img/user.svg" alt="">
+						</div>
+
+						<div class="mobile-nav__login-block">
+							<a class="mobile-nav__login-link" href="#">Войти</a>
+						</div>
+
+						<div class="mobile-nav__catalog-block">
+							<a class="mobile-nav__item mobile-nav__catalog" href="#">Каталог</a>
+						</div>
+
+						<hr class="mobile-nav__first-line">
+
+						<div class="mobile-nav__info-block">
+							<a class="mobile-nav__item mobile-nav__town" href="#">Санкт-Петербург</a>
+							<a class="mobile-nav__item mobile-nav__phone" href="#">+7 (347) 225-25-20</a>
+						</div>
+
+						<hr class="mobile-nav__second-line">
+
+						<div class="mobile-nav__menu-block">
+							<a class="mobile-nav__item mobile-nav__price" href="#">Прайс-лист</a>
+							<a class="mobile-nav__item mobile-nav__delivery" href="#">Доставка</a>
+							<a class="mobile-nav__item mobile-nav__reviews" href="#">Отзывы</a>
+							<a class="mobile-nav__item mobile-nav__contacts" href="#">Контакты</a>
+						</div>
+
+						<div class="mobile-nav__socials">
+							<ul class="mobile-nav__socials-list">
+								<li class="mobile-nav__socials-item mobile-nav__socials-item--vk"><a href="https://vk.com/riadent_ufa/">Вконакте Riadent</a></li>
+								<li class="mobile-nav__socials-item mobile-nav__socials-item--whatsapp"><a href="https://wa.me/79279405522">Написать Whatsapp Riadent</a></li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+
+				<div class="middle-header__phone">
+					<a class="middle-header__phone-number" href="tel:+73472252520">+7 (347) 225-25-20</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="bottom-header">
+			<div class="container bottom-header__container">
+				<div class="bottom-header__catalog">
+					<a href="#" class="bottom-header__catalog-link">Каталог товаров</a>
+					<ul class="bottom-header__dropdown-list">
+						<li class="bottom-header__dropdown-item">
+							<a href="#">Производители</a>
+						</li>
+						<li class="bottom-header__dropdown-item bottom-header__dropdown-item--with-arrow">
+							<a href="#">Анестезия/ инструменты</a>
+							<ul class="bottom-header__seconddrop-list">
+								<li class="bottom-header__seconddrop-item bottom-header__seconddrop-item--with-arrow">
+									<a href="#">Анестезия</a>
+									<ul class="bottom-header__thirddrop-list">
+										<li class="bottom-header__thirddrop-item"><a href="#">Анестетики</a></li>
+										<li class="bottom-header__thirddrop-item"><a href="#">Аппликационная анестезия</a></li>
+									</ul>
+								</li>
+								<li class="bottom-header__seconddrop-item"><a href="#">Иглы для шприцов</a></li>
+								<li class="bottom-header__seconddrop-item"><a href="#">Шприцы медицинские</a></li>
+							</ul>
+						</li>
+						<li class="bottom-header__dropdown-item bottom-header__dropdown-item--with-arrow">
+							<a href="#">Дезинфекция</a>
+							<ul class="bottom-header__seconddrop-list">
+								<li class="bottom-header__seconddrop-item bottom-header__seconddrop-item--with-arrow">
+									<a href="#">Жидкости</a>
+									<ul class="bottom-header__thirddrop-list">
+										<li class="bottom-header__thirddrop-item"><a href="#">Дезинфеция, очистка и уход за руками и слизистыми</a></li>
+										<li class="bottom-header__thirddrop-item"><a href="#">Дезинфекция и очистка отсасывающих систем</a></li>
+										<li class="bottom-header__thirddrop-item"><a href="#">Дезинфекция и предстерилизационная очистка мединструментов</a></li>
+										<li class="bottom-header__thirddrop-item"><a href="#">Дезинфекция поверхностей, предметов, оборудования</a></li>
+										<li class="bottom-header__thirddrop-item"><a href="#">Аксессуары</a></li>
+									</ul>
+								</li>
+								<li class="bottom-header__seconddrop-item">
+									<a href="#">Салфетки</a>
+								</li>
+								<li class="bottom-header__seconddrop-item bottom-header__seconddrop-item--with-arrow">
+									<a href="#">Упаковочные материалы</a>
+									<ul class="bottom-header__thirddrop-list">
+										<li class="bottom-header__thirddrop-item"><a href="#">Рулоны для стерилизации плоские</a></li>
+										<li class="bottom-header__thirddrop-item"><a href="#">Пакеты для автоклава плоские</a></li>
+									</ul>
+								</li>
+								<li class="bottom-header__seconddrop-item bottom-header__seconddrop-item--with-arrow">
+									<a href="#">Индикаторы</a>
+									<ul class="bottom-header__thirddrop-list">
+										<li class="bottom-header__thirddrop-item"><a href="#">Химические индикаторы для паровой стерилизации</a></li>
+										<li class="bottom-header__thirddrop-item"><a href="#">Химические индикаторы для воздушной стерилизации</a></li>
+									</ul>
+								</li>
+								<li class="bottom-header__seconddrop-item">
+									<a href="#">Журналы</a>
+								</li>
+								<li class="bottom-header__seconddrop-item bottom-header__seconddrop-item--with-arrow">
+									<a href="#">Контейнеры, ёмкости</a>
+									<ul class="bottom-header__thirddrop-list">
+										<li class="bottom-header__thirddrop-item"><a href="#">Ёмкости</a></li>
+										<li class="bottom-header__thirddrop-item"><a href="#">Контейнеры</a></li>
+										<li class="bottom-header__thirddrop-item"><a href="#">Мешки для утилизации отходов</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="bottom-header__dropdown-item bottom-header__dropdown-item--with-arrow">
+							<a href="#">Зуботехническая лаборатория</a>
+							<ul class="bottom-header__seconddrop-list">
+								<li class="bottom-header__seconddrop-item"><a href="#">Воска, гипсы, паковочные массы</a></li>
+								<li class="bottom-header__seconddrop-item"><a href="#">Обработка ортопедический конструкций и изделий</a></li>
+								<li class="bottom-header__seconddrop-item"><a href="#">Зуботехнический полировальный инструмент</a></li>
+								<li class="bottom-header__seconddrop-item"><a href="#">Пластмассы</a></li>
+							</ul>
+						</li>
+						<li class="bottom-header__dropdown-item bottom-header__dropdown-item--with-arrow">
+							<a href="#">Инструменты</a>
+							<ul class="bottom-header__seconddrop-list">
+								<li class="bottom-header__seconddrop-item"><a href="#">Инструменты для ортопедии</a></li>
+								<li class="bottom-header__seconddrop-item"><a href="#">Инструменты для терапии</a></li>
+								<li class="bottom-header__seconddrop-item"><a href="#">Инструменты для хирургии</a></li>
+								<li class="bottom-header__seconddrop-item"><a href="#">Инструменты для пародонтологии</a></li>
+							</ul>
+						</li>
+						<li class="bottom-header__dropdown-item bottom-header__dropdown-item--with-arrow">
+							<a href="#">Ортопедия</a>
+							<ul class="bottom-header__seconddrop-list">
+								<li class="bottom-header__seconddrop-item"><a href="#">Временная фиксация ортопедических конструкций</a></li>
+								<li class="bottom-header__seconddrop-item"><a href="#">Временные ортопедические конструкции</a></li>
+								<li class="bottom-header__seconddrop-item"><a href="#">Гипсы стоматологические</a></li>
+								<li class="bottom-header__seconddrop-item"><a href="#">Подкладки под протезы</a></li>
+								<li class="bottom-header__seconddrop-item"><a href="#">Постоянная фиксация ортопедических конструкций</a></li>
+								<li class="bottom-header__seconddrop-item"><a href="#">Ремонт сколов металлокерамики</a></li>
+								<li class="bottom-header__seconddrop-item">
+									<a href="#">Оттискные материалы и аксессуары</a>
+									<!-- <ul class="bottom-header__thirddrop-list">
+										<li class="bottom-header__thirddrop-item"><a href="#">А-силиконовые массы (винилполисилоксаны)</a></li>
+										<li class="bottom-header__thirddrop-item"><a href="#">Альгинатные массы</a></li>
+										<li class="bottom-header__thirddrop-item"><a href="#">Материалы для регистрации прикуса</a></li>
+										<li class="bottom-header__thirddrop-item"><a href="#">Полиэфирные массы</a></li>
+										<li class="bottom-header__thirddrop-item"><a href="#">С-силиконовые массы (полисилоксаны)</a></li>
+										<li class="bottom-header__thirddrop-item"><a href="#">Аксессуары</a></li>
+									</ul> -->
+								</li>
+							</ul>
+						</li>
+						<li class="bottom-header__dropdown-item">
+							<a href="#">Профилактика и гигиена</a>
+						</li>
+						<li class="bottom-header__dropdown-item">
+							<a href="#">Терапия</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="bottom-header__search">
+					<form class="bottom-header__search-form" action="">
+						<input class="bottom-header__search-input" type="text" placeholder="Поиск">
+					</form>
+				</div>
+
+				<div class="bottom-header__whatsapp">
+					<a class="bottom-header__whatsapp-link" href="https://wa.me/79279405522"><span>Написать Whatsapp</span></a>
+				</div>
+
+				<div class="bottom-header__user">
+					<ul class="bottom-header__user-list">
+						<li class="bottom-header__user-item bottom-header__user-item--cart">
+							<a href="#">
+								<button type="button" class="bottom-header__cart-button">
+									<span class="bottom-header__cart-span">0</span>
+								</button>
+							</a>
+						</li>
+						<li class="bottom-header__user-item bottom-header__user-item--entry">
+							<a class="modal-login__link" href="#"></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="header-slider">
+			<div class="container header-slider__container">
+				<button class="header-slider__button header-slider__button--prev"></button>
+				<button class="header-slider__button header-slider__button--next"></button>
+				<div class="header-slider__list">
+					<div class="header-slider__item">
+						<div class="header-slider__info">
+							<span class="header-slider__title">Идеальный поиск стал реальностью</span>
+							<p class="header-slider__middle-text">Попробуйте автоматическое смешивание на тест-драйве вместе с Pentamix 3M!</p>
+							<p class="header-slider__bottom-text">Условия акции уточняйте у представителя 3m</p>
+							<a class="link--green header-slider__link" href="#">Узнать условия</a>
+						</div>
+						<div class="header-slider__img-block">
+							<img class="header-slider__img" src="img/slider1.jpg" alt="">
+						</div>
+					</div>
+					<div class="header-slider__item">
+						<div class="header-slider__info">
+							<span class="header-slider__title">Хирургический набор ICX в подарок</span>
+							<p class="header-slider__middle-text">При покупке 10 имплантатов ICX!</p>
+							<p class="header-slider__bottom-text">Стоимость предложения 51 220Р</p>
+							<a class="link--green header-slider__link" href="#">Узнать условия</a>
+						</div>
+						<div class="header-slider__img-block">
+							<img class="header-slider__img" src="img/slider2.jpg" alt="">
+						</div>
+					</div>
+					<div class="header-slider__item">
+						<div class="header-slider__info">
+							<span class="header-slider__title">Хирургический набор ICX в подарок</span>
+							<p class="header-slider__middle-text">При покупке 10 имплантатов ICX!</p>
+							<p class="header-slider__bottom-text">Стоимость предложения 51 220Р</p>
+							<a class="link--green header-slider__link" href="#">Узнать условия</a>
+						</div>
+						<div class="header-slider__img-block">
+							<img class="header-slider__img" src="img/slider2.jpg" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="header-slider__button-list"></div>
+			</div>
+		</div>
+	</header>
+
+	<main class="page-main">
+		<section class="populars">
+			<div class="container populars__container">
+				<div class="populars__item populars1">
+					<div class="populars__info">
+						<div class="populars__price">
+							<span class="populars__new-price">30750 ₽</span>
+						</div>
+					</div>
+
+					<div class="populars__img-block">
+						<a href="" class="populars__img-link">
+							<img class="populars__img" src="img/icx-1-400x400.jpg" alt="">
+						</a>
+					</div>
+
+					<div class="populars__bottom">
+						<h4 class="populars__name">
+							<a href="#">ICX-mini имплантат белый (бесцветный) Ø 2,9x10 мм (6 шт)</a>
+						</h4>
+					</div>
+					<button class="link--green populars__button" type="button" onclick="cart.add('43');">Купить</button>
+				</div>
+
+				<div class="populars__item populars2">
+					<div class="populars__info">
+						<div class="populars__price">
+							<span class="populars__new-price">30750 ₽</span>
+						</div>
+					</div>
+
+					<div class="populars__img-block">
+						<a href="" class="populars__img-link">
+							<img class="populars__img" src="img/icx-1-400x400.jpg" alt="">
+						</a>
+					</div>
+
+					<div class="populars__bottom">
+						<h4 class="populars__name">
+							<a href="#">ICX-mini имплантат белый (бесцветный) Ø 2,9x10 мм (6 шт)</a>
+						</h4>
+					</div>
+					<button class="link--green populars__button" type="button" onclick="cart.add('43');">Купить</button>
+				</div>
+
+				<div class="populars__item populars3">
+					<div class="populars__info">
+						<div class="populars__price">
+							<span class="populars__new-price">30750 ₽</span>
+						</div>
+					</div>
+
+					<div class="populars__img-block">
+						<a href="" class="populars__img-link">
+							<img class="populars__img" src="img/icx-1-400x400.jpg" alt="">
+						</a>
+					</div>
+
+					<div class="populars__bottom">
+						<h4 class="populars__name">
+							<a href="#">ICX-mini имплантат белый (бесцветный) Ø 2,9x10 мм (6 шт)</a>
+						</h4>
+					</div>
+					<button class="link--green populars__button" type="button" onclick="cart.add('43');">Купить</button>
+				</div>
+
+				<div class="populars__item populars4">
+					<div class="populars__info">
+						<div class="populars__price">
+							<span class="populars__new-price">30750 ₽</span>
+						</div>
+					</div>
+
+					<div class="populars__img-block">
+						<a href="" class="populars__img-link">
+							<img class="populars__img" src="img/icx-1-400x400.jpg" alt="">
+						</a>
+					</div>
+
+					<div class="populars__bottom">
+						<h4 class="populars__name">
+							<a href="#">ICX-mini имплантат белый (бесцветный) Ø 2,9x10 мм (6 шт)</a>
+						</h4>
+					</div>
+					<button class="link--green populars__button" type="button" onclick="cart.add('43');">Купить</button>
+				</div>
+
+				<div class="populars__item populars5">
+					<div class="populars__info">
+						<div class="populars__price">
+							<span class="populars__new-price">30750 ₽</span>
+						</div>
+					</div>
+
+					<div class="populars__img-block">
+						<a href="" class="populars__img-link">
+							<img class="populars__img" src="img/icx-1-400x400.jpg" alt="">
+						</a>
+					</div>
+
+					<div class="populars__bottom">
+						<h4 class="populars__name">
+							<a href="#">ICX-mini имплантат белый (бесцветный) Ø 2,9x10 мм (6 шт)</a>
+						</h4>
+					</div>
+					<button class="link--green populars__button" type="button" onclick="cart.add('43');">Купить</button>
+				</div>
+
+				<div class="populars__item populars6">
+					<div class="populars__info">
+						<div class="populars__price">
+							<span class="populars__new-price">30750 ₽</span>
+						</div>
+					</div>
+
+					<div class="populars__img-block">
+						<a href="" class="populars__img-link">
+							<img class="populars__img" src="img/icx-1-400x400.jpg" alt="">
+						</a>
+					</div>
+
+					<div class="populars__bottom">
+						<h4 class="populars__name">
+							<a href="#">ICX-mini имплантат белый (бесцветный) Ø 2,9x10 мм (6 шт)</a>
+						</h4>
+					</div>
+					<button class="link--green populars__button" type="button" onclick="cart.add('43');">Купить</button>
+				</div>
+
+				<div class="populars__item populars__item--big populars7">
+					<div class="populars__info">
+						<div class="populars__price">
+							<span class="populars__new-price"></span>
+						</div>
+					</div>
+
+					<div class="populars__img-block">
+						<a href="" class="populars__img-link">
+							<img class="populars__img" src="img/demineralizovannyj-kortikalnyj-poroshok-10-ml-005-01-mm1-400x400.jpg" alt="">
+						</a>
+					</div>
+
+					<div class="populars__bottom">
+						<h4 class="populars__name">
+							<a href="#">ICX-mini имплантат белый (бесцветный) Ø 2,9x10 мм (6 шт)</a>
+						</h4>
+					</div>
+					<button class="link--green populars__button" type="button" onclick="cart.add('43');">Купить</button>
+				</div>
+
+				<div class="populars__item populars8">
+					<div class="populars__info">
+						<div class="populars__price">
+							<span class="populars__new-price">3800 ₽</span>
+						</div>
+					</div>
+
+					<div class="populars__img-block">
+						<a href="" class="populars__img-link">
+							<img class="populars__img" src="img/demineralizovannyj-kortikalnyj-poroshok-10-ml-005-01-mm1-400x400.jpg" alt="">
+						</a>
+					</div>
+
+					<div class="populars__bottom">
+						<h4 class="populars__name">
+							<a href="#">ICX-mini имплантат белый (бесцветный) Ø 2,9x10 мм (6 шт)</a>
+						</h4>
+					</div>
+					<button class="link--green populars__button" type="button" onclick="cart.add('43');">Купить</button>
+				</div>
+
+				<div class="populars__item populars9">
+					<div class="populars__info">
+						<div class="populars__price">
+							<span class="populars__new-price">2750 ₽</span>
+						</div>
+					</div>
+
+					<div class="populars__img-block">
+						<a href="" class="populars__img-link">
+							<img class="populars__img" src="img/demineralizovannyj-kortikalnyj-poroshok-10-ml-005-01-mm1-400x400.jpg" alt="">
+						</a>
+					</div>
+
+					<div class="populars__bottom">
+						<h4 class="populars__name">
+							<a href="#">ICX-mini имплантат белый (бесцветный) Ø 2,9x10 мм (6 шт)</a>
+						</h4>
+					</div>
+					<button class="link--green populars__button" type="button" onclick="cart.add('43');">Купить</button>
+				</div>
+			</div>
+		</section>
+
+		<a href="#" class="link--green populars__catalog-link">Посмотреть весь каталог</a>
+
+		<section class="about-us">
+			<section class="advantages">
+				<div class="container advantages__container">
+					<ul class="advantages__list">
+						<li class="advantages__item">
+							<p class="advantages__block-text">Оплата, возврат и обмен</p>
+							<a href="#" class="advantages__block-link">Узнать условия</a>
+						</li>
+						<li class="advantages__item">
+							<p class="advantages__block-text">О доставке</p>
+							<a href="#" class="advantages__block-link">Подробнее</a>
+						</li>
+						<li class="advantages__item">
+							<p class="advantages__block-text">Производители</p>
+							<a href="#" class="advantages__block-link">Подробнее</a>
+						</li>
+						<li class="advantages__item">
+							<p class="advantages__block-text">Обзоры и статьи</p>
+							<a href="#" class="advantages__block-link">Читать блог</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="dilers">
+				<div class="container dilers__container">
+					<h2 class="dilers__title">Мы дилеры</h2>
+					<div class="dilers__slides">
+						<div class="dilers__slide-list dilers-slider">
+							<div class="dilers__slide-block">
+								<picture>
+									<!-- <source media="(max-width: 767px)" srcset="img/dilers1-mobile.png" width="31" height="22">  -->
+									<img class="dilers__slide-img" src="img/dilers1.png" width="133" height="95" alt="">
+								</picture>
+							</div>
+
+							<div class="dilers__slide-block">
+								<picture>
+									<!-- <source media="(max-width: 767px)" srcset="img/dilers2-mobile.png" width="36" height="21"> -->
+									<img class="dilers__slide-img" src="img/dilers2.png" width="152" height="90" alt="">
+								</picture>
+							</div>
+
+							<div class="dilers__slide-block">
+								<picture>
+									<!-- <source media="(max-width: 767px)" srcset="img/dilers1-mobile.png" width="31" height="22">  -->
+									<img class="dilers__slide-img" src="img/dilers1.png" width="133" height="95" alt="">
+								</picture>
+							</div>
+
+							<div class="dilers__slide-item">
+								<picture>
+									<!-- <source media="(max-width: 767px)" srcset="img/dilers2-mobile.png" width="36" height="21">  -->
+									<img class="dilers__slide-img" src="img/dilers2.png" width="152" height="90" alt="">
+								</picture>
+							</div>
+
+							<div class="dilers__slide-block">
+								<picture>
+									<!-- <source media="(max-width: 767px)" srcset="img/dilers1-mobile.png" width="31" height="22">  -->
+									<img class="dilers__slide-img" src="img/dilers1.png" width="133" height="95" alt="">
+								</picture>
+							</div>
+
+							<div class="dilers__slide-item">
+								<picture>
+									<!-- <source media="(max-width: 767px)" srcset="img/dilers2-mobile.png" width="36" height="21">  -->
+									<img class="dilers__slide-img" src="img/dilers2.png" width="152" height="90" alt="">
+								</picture>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="cooperate">
+				<div class="container cooperate__container">
+					<h2 class="cooperate__title">Мы сотрудничаем</h2>
+					<div class="cooperate__slides">
+						<div class="cooperate__slide-list cooperate-slider">
+								<div class="cooperate__slide-block">
+									<img class="cooperate__slide-img" src="img/cooperate1.png" width="218" height="92" alt="">
+								</div>
+
+								<div class="cooperate__slide-block">
+									<img class="cooperate__slide-img" src="img/cooperate1.png" width="218" height="92" alt="">
+								</div>
+
+								<div class="cooperate__slide-block">
+									<img class="cooperate__slide-img" src="img/cooperate1.png" width="218" height="92" alt="">
+								</div>
+
+								<div class="cooperate__slide-block">
+									<img class="cooperate__slide-img" src="img/cooperate1.png" width="218" height="92" alt="">
+								</div>
+
+								<div class="cooperate__slide-block">
+									<img class="cooperate__slide-img" src="img/cooperate1.png" width="218" height="92" alt="">
+								</div>
+
+								<div class="cooperate__slide-block">
+									<img class="cooperate__slide-img" src="img/cooperate1.png" width="218" height="92" alt="">
+								</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</section>
+	</main>
+
+	<footer class="page-footer page-footer--gray">
+		<div class="container page-footer__container">
+			<div class="page-footer__menu page-footer__main-menu">
+				<a href="#" class="page-footer__logo-link">
+					<picture>
+						<source media="(max-width: 767px)" srcset="img/logo-footer-mobile.png" width="134" height="35">
+						<source media="(max-width: 1023px)" srcset="img/logo-mobile.svg" width="206">
+						<img src="img/logo.png" alt="">
+					</picture>
+				</a>
+				<ul class="page-footer__list page-footer__main-list">
+					<li class="page-footer__menu-item"><a href="#" data-content="Контакты">Контакты</a></li>
+					<li class="page-footer__menu-item"><a href="#" data-content="Договор публичной оферты">Договор публичной оферты</a></li>
+					<li class="page-footer__menu-item"><a href="#" data-content="Политика конфиденциальности">Политика конфиденциальности</a></li>
+				</ul>
+			</div>
+			<div class="page-footer__menu page-footer__catalog-menu">
+				<h4 class="page-footer__name">Каталог</h4>
+				<ul class="page-footer__list page-footer__catalog-list">
+					<li class="page-footer__menu-item"><a href="/abatmenty" data-content="Абатменты">Абатменты</a></li>
+					<li class="page-footer__menu-item"><a href="/bioimplantaty-lioplast" data-content="Биоимплантаты Лиопласт">Биоимплантаты Лиопласт</a></li>
+					<li class="page-footer__menu-item"><a href="/drugie-ortopedicheskie-komponenty" data-content="Ортопедические компоненты">Ортопедические компоненты</a></li>
+					<li class="page-footer__menu-item"><a href="/implantaty" data-content="Имплантаты">Имплантаты</a></li>
+					<li class="page-footer__menu-item"><a href="/membrany" data-content="Мембраны">Мембраны</a></li>
+				</ul>
+			</div>
+			<div class="page-footer__menu page-footer__market-menu">
+				<h4 class="page-footer__name">R&A market</h4>
+				<ul class="page-footer__list page-footer__market-list">
+					<li class="page-footer__menu-item"><a href="#" data-content="Прайс-лист">Прайс-лист</a></li>
+					<li class="page-footer__menu-item"><a href="#" data-content="Отзывы">Отзывы</a></li>
+					<li class="page-footer__menu-item"><a href="#" data-content="Блог">Блог</a></li>
+					<li class="page-footer__menu-item"><a href="#" data-content="О компании">О компании</a></li>
+				</ul>
+			</div>
+			<div class="page-footer__menu page-footer__help-menu">
+				<h4 class="page-footer__name">Помощь</h4>
+				<ul class="page-footer__list page-footer__help-list">
+					<li class="page-footer__menu-item"><a href="#" data-content="Как оплатить?">Как оплатить?</a></li>
+					<li class="page-footer__menu-item"><a href="#" data-content="Доставка">Доставка</a></li>
+					<li class="page-footer__menu-item"><a href="#" data-content="Обратная связь">Обратная связь</a></li>
+					<!-- <li class="page-footer__menu-item"><a href="#" data-content="Реклама">Реклама</a></li>
+					<li class="page-footer__menu-item"><a href="#" data-content="Промокоды">Промокоды</a></li> -->
+				</ul>
+			</div>
+			<div class="page-footer__menu page-footer__payment">
+				<h4 class="page-footer__name">Оплата</h4>
+				<div class="page-footer__payment-images">
+					<img src="img/mastercard.svg" alt="Mastercard Риадент">
+					<img src="img/visa.svg" alt="Visa Риадент">
+				</div>
+				<div class="page-footer__socials">
+					<h4 class="page-footer__name">Соц.сети</h4>
+					<ul class="page-footer__socials-list">
+						<li class="page-footer__socials-item"><a href="https://vk.com/riadent_ufa/">Vkontakte</a></li>
+						<li class="page-footer__socials-item"><a href="https://wa.me/79279405522">Whatsapp</a></li>
+						<li class="page-footer__socials-item"><a href="https://www.instagram.com/riadent/">Instagram</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="page-footer__copyright">
+			<div class="container page-footer__copyright-container">
+				<p class="page-footer__copyright-text">Copyright © Riamedgroup 2020  Все права защищены</p>
+			</div>
+		</div>
+	</footer>
+
+	<section class="modal-login">
+		<form class="modal-login__form" action="">
+			<div class="modal-login__buttons-block modal-login__buttons-block--opened">
+				<button class="modal-login__button modal-login__button--enter">Войти на сайт</button>
+				<button class="modal-login__button modal-login__button--registration">Регистрация</button>
+			</div>
+
+			<div class="modal-login__enter-block">
+				<input class="modal-login__text-input modal-login__text-input--email" type="email" placeholder="E-mail">
+				<input class="modal-login__text-input modal-login__text-input--password" type="password"
+				placeholder="Пароль">
+				<a class="modal-login__forget-password" href="#">Забыли пароль?</a>
+				<button class="modal-login__button modal-login__button--form-enter" type="submit">Войти</button>
+				<button class="modal-login__cancel-button modal-login__cancel-button--enter">Назад</button>
+			</div>
+
+			<div class="modal-login__registration-block">
+				<input class="modal-login__text-input modal-login__text-input--email" type="email" placeholder="E-mail">
+				<input class="modal-login__text-input modal-login__text-input--password" type="password"
+				placeholder="Пароль">
+				<input class="modal-login__text-input modal-login__text-input--password" type="password"
+				placeholder="Повторите пароль">
+				<a class="modal-login__forget-password" href="#">Забыли пароль?</a>
+				<button class="modal-login__button modal-login__button--form-registration" type="submit">Отправить</button>
+				<button class="modal-login__cancel-button modal-login__cancel-button--registration">Назад</button>
+			</div>
+		</form>
+		<button class="modal-login__close-button">
+			Закрыть
+		</button>
+	</section>
+
+	<script src="js/all.js"></script>
+</body>
+</html>

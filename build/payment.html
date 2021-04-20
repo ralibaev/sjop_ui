@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Оплата Riadent</title>
+	<link rel="preload" href="fonts/MyriadPro-Regular/MyriadPro-Regular.woff2" as="font">
+	<link rel="preload" href="fonts/MyriadPro-Bold/MyriadPro-Bold.woff2" as="font">
+	<link rel="preload" href="fonts/montserrat/montserrat.woff2" as="font">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header class="page-header">
+		<div class="top-header">
+			<div class="container top-header__container">
+				<div class="top-header__adress">
+					<a href="#">г.Уфа ул.Кавказская 6/8</a>
+				</div>
+
+				<div class="top-header__time">
+					<a href="#">Мы работаем: Понедельник - Суббота: с 9:00 до 21:00</a>
+				</div>
+
+				<div class="top-header__feedback">
+					<a href="#" class="top-header__feedback-link">Обратная связь</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="middle-header">
+			<div class="container middle-header__container">
+				<div class="middle-header__logo">
+					<a href="#">
+						<picture>
+							<source media="(max-width: 1023px)" srcset="img/logo-mobile.svg">
+							<img class="middle-header__logo-img" src="img/logo.svg" alt="Логотип Riamed Group">
+						</picture>
+					</a>
+				</div>
+
+				<nav class="middle-header__nav main-nav main-nav--closed">
+					<button class="main-nav__toggle main-nav__toggle--closed" type="button"><span class="visually-hidden main-nav__toggle-bar">Меню</span></button>
+					<ul class="main-nav__list">
+						<li class="main-nav__item"><a href="#">Контакты</a></li>
+						<li class="main-nav__item"><a href="#">Каталог</a></li>
+						<li class="main-nav__item"><a href="#">Прайс-лист</a></li>
+						<li class="main-nav__item"><a href="#">Доставка</a></li>
+						<li class="main-nav__item"><a href="#">Отзывы</a></li>
+					</ul>
+
+					<div class="main-nav__mobile mobile-nav mobile-nav--closed">
+						<div class="mobile-nav__img-block">
+							<img src="img/user.svg" alt="">
+						</div>
+
+						<div class="mobile-nav__login-block">
+							<a class="mobile-nav__login-link" href="#">Войти</a>
+						</div>
+
+						<div class="mobile-nav__catalog-block">
+							<a class="mobile-nav__item mobile-nav__catalog" href="#">Каталог</a>
+						</div>
+
+						<hr class="mobile-nav__first-line">
+
+						<div class="mobile-nav__info-block">
+							<a class="mobile-nav__item mobile-nav__town" href="#">Санкт-Петербург</a>
+							<a class="mobile-nav__item mobile-nav__phone" href="#">+7 (347) 225-25-20</a>
+						</div>
+
+						<hr class="mobile-nav__second-line">
+
+						<div class="mobile-nav__menu-block">
+							<a class="mobile-nav__item mobile-nav__price" href="#">Прайс-лист</a>
+							<a class="mobile-nav__item mobile-nav__delivery" href="#">Доставка</a>
+							<a class="mobile-nav__item mobile-nav__reviews" href="#">Отзывы</a>
+							<a class="mobile-nav__item mobile-nav__contacts" href="#">Контакты</a>
+						</div>
+
+						<div class="mobile-nav__socials">
+							<ul class="mobile-nav__socials-list">
+								<li class="mobile-nav__socials-item mobile-nav__socials-item--vk"><a href="https://vk.com/riadent_ufa/">Вконакте Riadent</a></li>
+								<li class="mobile-nav__socials-item mobile-nav__socials-item--whatsapp"><a href="https://wa.me/79279405522">Написать Whatsapp Riadent</a></li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+
+				<div class="middle-header__phone">
+					<a class="middle-header__phone-number" href="tel:+73472252520">+7 (347) 225-25-20</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="bottom-header">
+			<div class="container bottom-header__container">
+				<div class="bottom-header__catalog">
+					<a href="#" class="bottom-header__catalog-link">Каталог товаров</a>
+					<ul class="bottom-header__dropdown-list">
+						<li class="bottom-header__dropdown-item"><a href="#">Производители</a></li>
+						<li class="bottom-header__dropdown-item"><a href="#">Анестезия/инструменты</a></li>
+						<li class="bottom-header__dropdown-item"><a href="#">Дезинфекция</a></li>
+						<li class="bottom-header__dropdown-item"><a href="#">Инструменты</a></li>
+					</ul>
+				</div>
+
+				<div class="bottom-header__search">
+					<form class="bottom-header__search-form" action="">
+						<input class="bottom-header__search-input" type="text" placeholder="Начните поиск здесь">
+					</form>
+				</div>
+
+				<div class="bottom-header__whatsapp">
+					<a class="bottom-header__whatsapp-link" href="https://wa.me/79279405522"><span>Написать Whatsapp</span></a>
+				</div>
+
+				<div class="bottom-header__user">
+					<ul class="bottom-header__user-list">
+						<li class="bottom-header__user-item bottom-header__user-item--cart">
+							<a href="#"></a>
+						</li>
+						<li class="bottom-header__user-item bottom-header__user-item--entry">
+							<a class="modal-login__link" href="#"></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main class="page-main">
+		<section class="breadcrumbs">
+			<div class="container breadcrumbs__container">
+				<ul class="breadcrumbs__list">
+					<li class="breadcrumbs__item"><a href="#">Главная</a></li>
+					<li class="breadcrumbs__item breadcrumbs__item--active"><a href="#">Оплата</a></li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="payment">
+			<div class="container payment__container">
+				<h1 class="payment__title">Как оплатить?</h1>
+				<div class="payment__block">
+					<h2 class="payment__block-title">Способы оплаты:</h2>
+					<ul class="payment__list payment__list--first">
+						<li>
+							Банковской картой<br>
+							Для выбора оплаты товара с помощью банковской карты на соответствующей странице необходимо нажать кнопку «Оплатить заказ». Оплата происходит через ПАО СБЕРБАНК с использованием Банковских карт следующих платежных систем:
+						</li>
+						<ul class="payment__list payment__list--top">
+							<li>МИР</li>
+							<li>VISA International</li>
+							<li>Mastercard Worldwide</li>
+						</ul>
+						<li>Перевод денег на банковский счет согласно высланному счету</li>
+						<li>Перевод денег на карточный счет</li>
+						<li>Расчет с курьером при доставке товаров в г. Уфа</li>
+						<li>Другой способ оплаты по согласованию с сотрудником интернет магазина</li>
+					</ul>
+				</div>
+			</div>
+
+			<hr>
+
+			<div class="container payment__container">
+				<div class="payment__block">
+					<h2 class="payment__block-title">Для покупки товаров в интернет магазине Ria Med Group необходимо:</h2>
+					<ul class="payment__list payment__list--center">
+						<li>Найти товары, которые вы хотите приобрести в каталоге интернет-магазина и добавить их в корзину. Также вы можете использовать "Поиск на сайте". Сформировать заказ.</li>
+						<li>Оформить заказ на сайте, используя электроную форму заказа. При оформлении заказа выполняйте указания сайта.</li>
+						<li>Сделать заказ по телефонам указанным на сайте. 8 000 000-00-00 или по бесплатному телефону 8 800 000-00-00 </li>
+						<li>Если по каким либо причинам Вам не удается сделать заказ, то просим сделать снимок экрана с вашим заказов и отправить его на почту riamed@group.ru или связаться с нашим менеджером по телефону 8 000 000 00 00</li>
+					</ul>
+					<p class="payment__notification">
+						Внимание. Данный интернет-сайт носит информационный характер и ни при каких условиях не является публичной офертой, которая определяется положениями Статьи 437 (2) Гражданского кодекса РФ. Для получения подробной информации о наличии и стоимости указанных товаров и услуг, пожалуйста, обращайтесь к нашим менеджерам по email
+					</p>
+				</div>
+			</div>
+
+			<hr>
+
+			<div class="container payment__container">
+				<div class="payment__block">
+					<h2 class="payment__block-title">Порядок возврата и обмена купленного товара:</h2>
+					<p class="payment__notification">
+						В соответствии с п. 4 ст. 26.1 ФЗ «О защите прав потребителей» и п. 21 Постановления Правительства РФ «Об утверждении правил продажи товаров дистанционным способом» потребитель имеет право отказаться от товара (в том числе и надлежащего качества) в любое время до его передачи, а после передачи – в течение 7 дней. При этом, обмен товара надлежащего качества возможен только в случае, если:
+					</p>
+					<ol class="payment__list payment__list--bottom">
+						<li>Товар не включен в перечень товаров надлежащего качества, не подлежащих возврату утвержденный Постановлением Правительства РФ №55 от 19.01.1998 г.</li>
+						<li>Товар не был в употреблении</li>
+						<li>Сохранены фабричные ярлыки, гарантийные талоны, техническая документация, комплектующие детали</li>
+						<li>Сохранена упаковка товара и товарный вид</li>
+						<li>В наличии документы, подтверждающие факт и условия покупки указанного товара (Ст. 25 Закона «О защите прав потребителей»)</li>
+					</ol>
+					<p class="payment__notification">
+						В случае отказа от товара возврату подлежит уплаченная сумма, за исключением расходов на доставку товара, а также других расходов Интернет-магазина, подлежащих компенсации за счет Покупателя (Ст. 26.1 Закона «О защите прав потребителей»).
+					</p>
+					<p class="payment__notification">
+						Информируем, что в утвержденный Постановлением правительства РФ №55 от 19 января 1998 г. Перечень непродовольственных товаров надлежащего качества, не подлежащих возврату или обмену на аналогичный товар других размеров, формы, габарита, фасона, расцветки или комплектации, входят средства гигиены полости рта и предметы личной гигиены, а именно зубные щетки, ёршики, ирригаторы, насадки для них.
+					</p>
+					<p class="payment__notification">
+						Возврат товара ненадлежащего качества возможен в течение 14-и дней с момента покупки при отсутствии сомнений в дефекте. При обнаружении какого-либо дефекта или при поломке после 14-и дней покупатель имеет право либо на возврат суммы, уплаченной за товар, либо на соразмерное уменьшение цены, либо на устранение недостатка. Решение по ремонту прибора либо возврату денег принимается в течение не более 14-и дней.
+					</p>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="page-footer page-footer--gray">
+		<div class="container page-footer__container">
+			<div class="page-footer__menu page-footer__main-menu">
+				<a href="#" class="page-footer__logo-link">
+					<picture>
+						<source media="(max-width: 767px)" srcset="img/logo-footer-mobile.png" width="134" height="35">
+						<source media="(max-width: 1023px)" srcset="img/logo-mobile.svg" width="206">
+						<img src="img/logo.png" alt="">
+					</picture>
+				</a>
+				<ul class="page-footer__list page-footer__main-list">
+					<li class="page-footer__menu-item"><a href="#" data-content="Обратная связь">Обратная связь</a></li>
+					<li class="page-footer__menu-item"><a href="#" data-content="Контакты">Контакты</a></li>
+					<li class="page-footer__menu-item"><a href="#" data-content="Договор публичной оферты">Договор публичной оферты</a></li>
+					<li class="page-footer__menu-item"><a href="#" data-content="Политика конфиденциальности">Политика конфиденциальности</a></li>
+				</ul>
+			</div>
+			<div class="page-footer__menu page-footer__market-menu">
+				<h4 class="page-footer__name">R&A market</h4>
+				<ul class="page-footer__list page-footer__market-list">
+					<li class="page-footer__menu-item"><a href="#" data-content="Прайс-лист">Прайс-лист</a></li>
+					<li class="page-footer__menu-item"><a href="#" data-content="Отзывы">Отзывы</a></li>
+					<li class="page-footer__menu-item"><a href="#" data-content="Блог">Блог</a></li>
+					<li class="page-footer__menu-item"><a href="#" data-content="Компании">Компании</a></li>
+					<li class="page-footer__menu-item"><a href="#" data-content="Вакансии">Вакансии</a></li>
+				</ul>
+			</div>
+			<div class="page-footer__menu page-footer__catalog-menu">
+				<h4 class="page-footer__name">Каталог</h4>
+				<ul class="page-footer__list page-footer__catalog-list">
+					<li class="page-footer__menu-item"><a href="#" data-content="Анестезия">Анестезия</a></li>
+					<li class="page-footer__menu-item"><a href="#" data-content="Дезинфекция">Дезинфекция</a></li>
+					<li class="page-footer__menu-item"><a href="#" data-content="Ирригаторы">Ирригаторы</a></li>
+					<li class="page-footer__menu-item"><a href="#" data-content="Ортопедия">Ортопедия</a></li>
+					<li class="page-footer__menu-item"><a href="#" data-content="Профилактика">Профилактика</a></li>
+					<li class="page-footer__menu-item"><a href="#" data-content="Терапия">Терапия</a></li>
+				</ul>
+			</div>
+			<div class="page-footer__menu page-footer__help-menu">
+				<h4 class="page-footer__name">Помощь</h4>
+				<ul class="page-footer__list page-footer__help-list">
+					<li class="page-footer__menu-item"><a href="#" data-content="Как оплатить?">Как оплатить?</a></li>
+					<li class="page-footer__menu-item"><a href="#" data-content="Доставка">Доставка</a></li>
+					<li class="page-footer__menu-item"><a href="#" data-content="Обратная связь">Обратная связь</a></li>
+					<li class="page-footer__menu-item"><a href="#" data-content="Реклама">Реклама</a></li>
+					<li class="page-footer__menu-item"><a href="#" data-content="Промокоды">Промокоды</a></li>
+				</ul>
+			</div>
+			<div class="page-footer__menu page-footer__payment">
+				<h4 class="page-footer__name">Оплата</h4>
+				<div class="page-footer__payment-images">
+					<img src="img/mastercard.svg" width="90" alt="Mastercard Риадент">
+					<img src="img/visa.svg" width="90" alt="Visa Риадент">
+				</div>
+				<div class="page-footer__socials">
+					<h4 class="page-footer__name">Соц.сети</h4>
+					<ul class="page-footer__socials-list">
+						<li class="page-footer__socials-item"><a href="#">Facebook</a></li>
+						<li class="page-footer__socials-item"><a href="https://vk.com/riadent_ufa/">Vkontakte</a></li>
+						<li class="page-footer__socials-item"><a href="https://wa.me/79279405522">Whatsapp</a></li>
+						<li class="page-footer__socials-item"><a href="https://www.instagram.com/riadent/">Instagram</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="page-footer__copyright">
+			<div class="container page-footer__copyright-container">
+				<p class="page-footer__copyright-text">Copyright © Riamedgroup 2020  Все права защищены</p>
+			</div>
+		</div>
+	</footer>
+
+	<section class="modal-login">
+		<form class="modal-login__form" action="">
+			<div class="modal-login__buttons-block modal-login__buttons-block--opened">
+				<button class="modal-login__button modal-login__button--enter">Войти на сайт</button>
+				<button class="modal-login__button modal-login__button--registration">Регистрация</button>
+			</div>
+
+			<div class="modal-login__enter-block">
+				<input class="modal-login__text-input modal-login__text-input--email" type="email" placeholder="E-mail">
+				<input class="modal-login__text-input modal-login__text-input--password" type="password"
+				placeholder="Пароль">
+				<a class="modal-login__forget-password" href="#">Забыли пароль?</a>
+				<button class="modal-login__button modal-login__button--form-enter" type="submit">Войти</button>
+				<button class="modal-login__cancel-button modal-login__cancel-button--enter">Назад</button>
+			</div>
+
+			<div class="modal-login__registration-block">
+				<input class="modal-login__text-input modal-login__text-input--email" type="email" placeholder="E-mail">
+				<input class="modal-login__text-input modal-login__text-input--password" type="password"
+				placeholder="Пароль">
+				<input class="modal-login__text-input modal-login__text-input--password" type="password"
+				placeholder="Повторите пароль">
+				<a class="modal-login__forget-password" href="#">Забыли пароль?</a>
+				<button class="modal-login__button modal-login__button--form-registration" type="submit">Отправить</button>
+				<button class="modal-login__cancel-button modal-login__cancel-button--registration">Назад</button>
+			</div>
+		</form>
+		<button class="modal-login__close-button">
+			Закрыть
+		</button>
+	</section>
+
+	<script src="js/main-nav.js"></script>
+	<script src="js/modal-login.js"></script>
+</body>
+</html>

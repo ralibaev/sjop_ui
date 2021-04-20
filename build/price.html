@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Прайс-лист Riadent</title>
+	<link rel="preload" href="fonts/MyriadPro-Regular/MyriadPro-Regular.woff2" as="font">
+	<link rel="preload" href="fonts/MyriadPro-Bold/MyriadPro-Bold.woff2" as="font">
+	<link rel="preload" href="fonts/montserrat/montserrat.woff2" as="font">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header class="page-header">
+		<div class="top-header">
+			<div class="container top-header__container">
+				<div class="top-header__adress">
+					<a href="#">г.Уфа ул.Кавказская 6/8</a>
+				</div>
+
+				<div class="top-header__time">
+					<a href="#">Мы работаем: Понедельник - Суббота: с 9:00 до 21:00</a>
+				</div>
+
+				<div class="top-header__feedback">
+					<a href="#" class="top-header__feedback-link">Обратная связь</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="middle-header">
+			<div class="container middle-header__container">
+				<div class="middle-header__logo">
+					<a href="#">
+						<picture>
+							<source media="(max-width: 1023px)" srcset="img/logo-mobile.svg">
+							<img class="middle-header__logo-img" src="img/logo.svg" alt="Логотип Riamed Group">
+						</picture>
+					</a>
+				</div>
+
+				<nav class="middle-header__nav main-nav main-nav--closed">
+					<button class="main-nav__toggle main-nav__toggle--closed" type="button"><span class="visually-hidden main-nav__toggle-bar">Меню</span></button>
+					<ul class="main-nav__list">
+						<li class="main-nav__item"><a href="#">Контакты</a></li>
+						<li class="main-nav__item"><a href="#">Каталог</a></li>
+						<li class="main-nav__item"><a href="#">Прайс-лист</a></li>
+						<li class="main-nav__item"><a href="#">Доставка</a></li>
+						<li class="main-nav__item"><a href="#">Отзывы</a></li>
+					</ul>
+
+					<div class="main-nav__mobile mobile-nav mobile-nav--closed">
+						<div class="mobile-nav__img-block">
+							<img src="img/user.svg" alt="">
+						</div>
+
+						<div class="mobile-nav__login-block">
+							<a class="mobile-nav__login-link" href="#">Войти</a>
+						</div>
+
+						<div class="mobile-nav__catalog-block">
+							<a class="mobile-nav__item mobile-nav__catalog" href="#">Каталог</a>
+						</div>
+
+						<hr class="mobile-nav__first-line">
+
+						<div class="mobile-nav__info-block">
+							<a class="mobile-nav__item mobile-nav__town" href="#">Санкт-Петербург</a>
+							<a class="mobile-nav__item mobile-nav__phone" href="#">+7 (347) 225-25-20</a>
+						</div>
+
+						<hr class="mobile-nav__second-line">
+
+						<div class="mobile-nav__menu-block">
+							<a class="mobile-nav__item mobile-nav__price" href="#">Прайс-лист</a>
+							<a class="mobile-nav__item mobile-nav__delivery" href="#">Доставка</a>
+							<a class="mobile-nav__item mobile-nav__reviews" href="#">Отзывы</a>
+							<a class="mobile-nav__item mobile-nav__contacts" href="#">Контакты</a>
+						</div>
+
+						<div class="mobile-nav__socials">
+							<ul class="mobile-nav__socials-list">
+								<li class="mobile-nav__socials-item mobile-nav__socials-item--vk"><a href="https://vk.com/riadent_ufa/">Вконакте Riadent</a></li>
+								<li class="mobile-nav__socials-item mobile-nav__socials-item--whatsapp"><a href="https://wa.me/79279405522">Написать Whatsapp Riadent</a></li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+
+				<div class="middle-header__phone">
+					<a class="middle-header__phone-number" href="tel:+73472252520">+7 (347) 225-25-20</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="bottom-header">
+			<div class="container bottom-header__container">
+				<div class="bottom-header__catalog">
+					<a href="#" class="bottom-header__catalog-link">Каталог товаров</a>
+					<ul class="bottom-header__dropdown-list">
+						<li class="bottom-header__dropdown-item"><a href="#">Производители</a></li>
+						<li class="bottom-header__dropdown-item"><a href="#">Анестезия/ инструменты</a></li>
+						<li class="bottom-header__dropdown-item"><a href="#">Дезинфекция</a></li>
+						<li class="bottom-header__dropdown-item"><a href="#">Инструменты</a></li>
+					</ul>
+				</div>
+
+				<div class="bottom-header__search">
+					<form class="bottom-header__search-form" action="">
+						<input class="bottom-header__search-input" type="text" placeholder="Начните поиск здесь">
+					</form>
+				</div>
+
+				<div class="bottom-header__whatsapp">
+					<a class="bottom-header__whatsapp-link" href="https://wa.me/79279405522"><span>Написать Whatsapp</span></a>
+				</div>
+
+				<div class="bottom-header__user">
+					<ul class="bottom-header__user-list">
+						<li class="bottom-header__user-item bottom-header__user-item--cart">
+							<a href="#"></a>
+						</li>
+						<li class="bottom-header__user-item bottom-header__user-item--entry">
+							<a class="modal-login__link" href="#"></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main class="page-main page-main--without-background">
+		<section class="breadcrumbs breadcrumbs--tablet-gray">
+			<div class="container breadcrumbs__container">
+				<ul class="breadcrumbs__list">
+					<li class="breadcrumbs__item"><a href="#">Главная</a></li>
+					<li class="breadcrumbs__item breadcrumbs__item--active"><a href="#">Оплата</a></li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="price">
+			<div class="container price__container">
+				<h1 class="price__title">Цены, прайс-лист</h1>
+				<div class="price__main-block">
+					<div class="price__left-block">
+						<div class="price__document-block">
+							<div class="price__document-top">
+								<button class="price__document-title price__document-title--first">Анестезия/инструменты</button>
+								<a class="price__download-link" href="#"></a>
+							</div>
+							<div class="price__hidden-block price__hidden-block--first">
+								<ul class="price__document-list">
+									<li class="price__document-item"><a href="#">Анестезия</a></li>
+									<li class="price__document-item"><a href="#">Иглы для шприцов</a></li>
+									<li class="price__document-item"><a href="#">Шприцы медицинские</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="price__document-block">
+							<div class="price__document-top">
+								<button class="price__document-title">Дезинфекция</button>
+								<a class="price__download-link" href="#"></a>
+							</div>
+							<div class="price__hidden-block">
+								<ul class="price__document-list">
+									<li class="price__document-item"><a href="#">Жидкости</a></li>
+									<li class="price__document-item"><a href="#">Салфетки</a></li>
+									<li class="price__document-item"><a href="#">Упаковочные материалы</a></li>
+									<li class="price__document-item"><a href="#">Индикаторы</a></li>
+									<li class="price__document-item"><a href="#">Журналы</a></li>
+									<li class="price__document-item"><a href="#">Контейнеры, ёмкости</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="price__document-block">
+							<div class="price__document-top">
+								<button class="price__document-title">Зуботехническая лаборатория</button>
+								<a class="price__download-link" href="#"></a>
+							</div>
+							<div class="price__hidden-block">
+								<ul class="price__document-list">
+									<li class="price__document-item"><a href="#">Пластмассы</a></li>
+									<li class="price__document-item"><a href="#">Сплавы, металлы, припой</a></li>
+									<li class="price__document-item"><a href="#">Зубы акриловые</a></li>
+									<li class="price__document-item"><a href="#">Обработка ортопедический конструкций и изделий</a></li>
+									<li class="price__document-item"><a href="#">Зуботехнический полировальный инструмент</a></li>
+									<li class="price__document-item"><a href="#">Воска, гипсы, паковочные массы</a></li>
+									<li class="price__document-item"><a href="#">Зуботехнический полировальный инструмент</a></li>
+									<li class="price__document-item"><a href="#">Клеи, смолы</a></li>
+									<li class="price__document-item"><a href="#">Пластмассы</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="price__document-block">
+							<div class="price__document-top">
+								<button class="price__document-title">Инструменты</button>
+								<a class="price__download-link" href="#"></a>
+							</div>
+							<div class="price__hidden-block">
+								<ul class="price__document-list">
+									<li class="price__document-item"><a href="#">Инструменты для хирургии</a></li>
+									<li class="price__document-item"><a href="#">Инструменты для терапии</a></li>
+									<li class="price__document-item"><a href="#">Инструменты для диагностики</a></li>
+									<li class="price__document-item"><a href="#">Инструменты для хирургии</a></li>
+									<li class="price__document-item"><a href="#">Инструменты для ортопедии</a></li>
+									<li class="price__document-item"><a href="#">Инструменты для пародонтологии</a></li>
+									<li class="price__document-item"><a href="#">KOHLER</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="price__document-block">
+							<div class="price__document-top">
+								<button class="price__document-title">Ортопедия</button>
+								<a class="price__download-link" href="#"></a>
+							</div>
+							<div class="price__hidden-block">
+								<ul class="price__document-list">
+									<li class="price__document-item"><a href="#">Ремонт сколов металлокерамики</a></li>
+									<li class="price__document-item"><a href="#">Постоянная фиксация ортопедических конструкций</a></li>
+									<li class="price__document-item"><a href="#">Подкладки под протезы</a></li>
+									<li class="price__document-item"><a href="#">Оттискные материалы и аксессуары</a></li>
+									<li class="price__document-item"><a href="#">Гипсы стоматологические</a></li>
+									<li class="price__document-item"><a href="#">Временные ортопедические конструкции</a></li>
+									<li class="price__document-item"><a href="#">Временная фиксация ортопедических конструкций</a></li>
+									<li class="price__document-item"><a href="#">Слепочные ложки</a></li>
+									<li class="price__document-item"><a href="#">Оттискные материалы и аксессуары</a></li>
+									<li class="price__document-item"><a href="#">Лекарственные средства</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="price__document-block">
+							<div class="price__document-top">
+								<button class="price__document-title">Профилактика и гигиена</button>
+								<a class="price__download-link" href="#"></a>
+							</div>
+							<div class="price__hidden-block">
+								<ul class="price__document-list">
+									<li class="price__document-item"><a href="#">Зубные нити</a></li>
+									<li class="price__document-item"><a href="#">Насадки для ирригаторов</a></li>
+									<li class="price__document-item"><a href="#">Звуковые зубные щетки</a></li>
+									<li class="price__document-item"><a href="#">Детские зубные щетки</a></li>
+									<li class="price__document-item"><a href="#">Средства защиты и гигиены</a></li>
+									<li class="price__document-item"><a href="#">Полирование и удаление зубного камня</a></li>
+									<li class="price__document-item"><a href="#">Слюноотсосы</a></li>
+									<li class="price__document-item"><a href="#">Медицинские перчатки</a></li>
+									<li class="price__document-item"><a href="#">Одноразовые бахилы</a></li>
+									<li class="price__document-item"><a href="#">Чехол для ирригатора</a></li>
+									<li class="price__document-item"><a href="#">Наборы для ухода за протезами</a></li>
+									<li class="price__document-item"><a href="#">Зубные пасты и гели</a></li>
+									<li class="price__document-item"><a href="#">Пенки и ополаскиватели</a></li>
+									<li class="price__document-item"><a href="#">Средства для отбеливания зубов</a></li>
+									<li class="price__document-item"><a href="#">Очки защитные</a></li>
+									<li class="price__document-item"><a href="#">Ополаскиватели для полости рта</a></li>
+									<li class="price__document-item"><a href="#">Ультразвуковые зубные щетки</a></li>
+									<li class="price__document-item"><a href="#">Детские зубные пасты</a></li>
+									<li class="price__document-item"><a href="#">Межзубные ершики</a></li>
+									<li class="price__document-item"><a href="#">Зубные щетки</a></li>
+									<li class="price__document-item"><a href="#">Профилактика зубного кариеса</a></li>
+									<li class="price__document-item"><a href="#">Индивидуальные средства профилактики и ухода</a></li>
+									<li class="price__document-item"><a href="#">Халаты хирургические</a></li>
+									<li class="price__document-item"><a href="#">Маски защитные</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="price__document-block">
+							<div class="price__document-top">
+								<button class="price__document-title">Терапия</button>
+								<a class="price__download-link" href="#"></a>
+							</div>
+							<div class="price__hidden-block">
+								<ul class="price__document-list">
+									<li class="price__document-item"><a href="#">Рентгенография</a></li>
+									<li class="price__document-item"><a href="#">Ложки для слепков</a></li>
+									<li class="price__document-item"><a href="#">Изоляция рабочего поля, роторасширители</a></li>
+									<li class="price__document-item"><a href="#">Полировальные и шлифовальные системы</a></li>
+									<li class="price__document-item"><a href="#">Артикуляционная бумага и спреи</a></li>
+									<li class="price__document-item"><a href="#">Наконечники для пылесосов</a></li>
+									<li class="price__document-item"><a href="#">Адгезивы, гели для травления</a></li>
+									<li class="price__document-item"><a href="#">Клинья</a></li>
+									<li class="price__document-item"><a href="#">Клампы</a></li>
+									<li class="price__document-item"><a href="#">Матрицы</a></li>
+									<li class="price__document-item"><a href="#">Вспомогательные, лечебные препараты</a></li>
+									<li class="price__document-item"><a href="#">Подкладочные материалы</a></li>
+									<li class="price__document-item"><a href="#">Полировальные и шлифовальные системы</a></li>
+									<li class="price__document-item"><a href="#">Изоляция рабочего поля, роторасширители</a></li>
+									<li class="price__document-item"><a href="#">Пломбировочные материалы</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="price__document-block">
+							<div class="price__document-top">
+								<button class="price__document-title">Эндодонтия</button>
+								<a class="price__download-link" href="#"></a>
+							</div>
+							<div class="price__hidden-block">
+								<ul class="price__document-list">
+									<li class="price__document-item"><a href="#">Восстановление дефектов костной ткани корневых зубов</a></li>
+									<li class="price__document-item"><a href="#">Штифты стоматологические</a></li>
+									<li class="price__document-item"><a href="#">Эндодонтические инструменты, обтураторы</a></li>
+									<li class="price__document-item"><a href="#">Пломбирование корневых каналов</a></li>
+									<li class="price__document-item"><a href="#">Лечебные материалы</a></li>
+									<li class="price__document-item"><a href="#">Насадки для скалера</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="price__document-block">
+							<div class="price__document-top">
+								<button class="price__document-title">Вспомогательные материалы</button>
+								<a class="price__download-link" href="#"></a>
+							</div>
+							<div class="price__hidden-block">
+								<ul class="price__document-list">
+									<li class="price__document-item"><a href="#">Салфетки нагрудные</a></li>
+									<li class="price__document-item"><a href="#">Канюли для диспенсеров</a></li>
+									<li class="price__document-item"><a href="#">Блоки для замешивания (Полипанель)</a></li>
+									<li class="price__document-item"><a href="#">Фартуки медицинские</a></li>
+									<li class="price__document-item"><a href="#">Марля медицинская</a></li>
+									<li class="price__document-item"><a href="#">Ватные валики</a></li>
+									<li class="price__document-item"><a href="#">Аппликаторы (Микробраши)</a></li>
+									<li class="price__document-item"><a href="#">Таблетки для полоскания</a></li>
+									<li class="price__document-item"><a href="#">Латексные листы</a></li>
+									<li class="price__document-item"><a href="#">Вата медицинская</a></li>
+									<li class="price__document-item"><a href="#">Стаканы пластиковые</a></li>
+									<li class="price__document-item"><a href="#">Шапочки медицинские</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="price__document-block">
+							<div class="price__document-top">
+								<button class="price__document-title">Оборудование и аксессуары</button>
+								<a class="price__download-link" href="#"></a>
+							</div>
+							<div class="price__hidden-block">
+								<ul class="price__document-list">
+									<li class="price__document-item"><a href="#">Смазка и очистка наконечников</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="price__document-block">
+							<div class="price__document-top">
+								<button class="price__document-title">Хирургия и пародонтология</button>
+								<a class="price__download-link" href="#"></a>
+							</div>
+							<div class="price__hidden-block">
+								<ul class="price__document-list">
+									<li class="price__document-item"><a href="#">Лезвия для скальпелей</a></li>
+									<li class="price__document-item"><a href="#">Материалы для хирургии</a></li>
+									<li class="price__document-item"><a href="#">Шовные материалы</a></li>
+									<li class="price__document-item"><a href="#">Остеопластические материалы</a></li>
+									<li class="price__document-item"><a href="#">Материалы для пародонтологии</a></li>
+									<li class="price__document-item"><a href="#">Скальпели хирургические</a></li>
+									<li class="price__document-item"><a href="#">Материалы для шинирования</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="price__document-block">
+							<div class="price__document-top">
+								<span class="price__document-name">Трейнеры</span>
+								<a class="price__download-link" href="#"></a>
+							</div>
+						</div>
+						<div class="price__document-block">
+							<div class="price__document-top">
+								<span class="price__document-name">Электрические зубные щетки</span>
+								<a class="price__download-link" href="#"></a>
+							</div>
+						</div>
+						<div class="price__document-block">
+							<div class="price__document-top">
+								<span class="price__document-name">Ирригаторы</span>
+								<a class="price__download-link" href="#"></a>
+							</div>
+						</div>
+						<div class="price__document-block">
+							<div class="price__document-top">
+								<span class="price__document-name">Одежда медицинская</span>
+								<a class="price__download-link" href="#"></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="price__right-block">
+						<div class="price__right-info">
+							<div class="price__img-block">
+								<img class="price__excel-img" src="img/xls.svg" alt="">
+							</div>
+							<span class="price__excel-info">Все файлы скачиваются в формате excel и весят до 1 мб</span>
+						</div>
+						<a class="link--green price__download-all" href="#">Скачать каталог</a>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="page-footer page-footer--white">
+		<div class="container page-footer__container">
+			<div class="page-footer__menu page-footer__main-menu">
+				<a href="#" class="page-footer__logo-link">
+					<picture>
+						<source media="(max-width: 767px)" srcset="img/logo-footer-mobile.png" width="134" height="35">
+						<source media="(max-width: 1023px)" srcset="img/logo-mobile.svg" width="206">
+						<img src="img/logo.png" alt="">
+					</picture>
+				</a>
+				<ul class="page-footer__list page-footer__main-list">
+					<li class="page-footer__menu-item"><a href="#" data-content="Обратная связь">Обратная связь</a></li>
+					<li class="page-footer__menu-item"><a href="#" data-content="Контакты">Контакты</a></li>
+					<li class="page-footer__menu-item"><a href="#" data-content="Договор публичной оферты">Договор публичной оферты</a></li>
+					<li class="page-footer__menu-item"><a href="#" data-content="Политика конфиденциальности">Политика конфиденциальности</a></li>
+				</ul>
+			</div>
+			<div class="page-footer__menu page-footer__market-menu">
+				<h4 class="page-footer__name">R&A market</h4>
+				<ul class="page-footer__list page-footer__market-list">
+					<li class="page-footer__menu-item"><a href="#" data-content="Прайс-лист">Прайс-лист</a></li>
+					<li class="page-footer__menu-item"><a href="#" data-content="Отзывы">Отзывы</a></li>
+					<li class="page-footer__menu-item"><a href="#" data-content="Блог">Блог</a></li>
+					<li class="page-footer__menu-item"><a href="#" data-content="Компании">Компании</a></li>
+					<li class="page-footer__menu-item"><a href="#" data-content="Вакансии">Вакансии</a></li>
+				</ul>
+			</div>
+			<div class="page-footer__menu page-footer__catalog-menu">
+				<h4 class="page-footer__name">Каталог</h4>
+				<ul class="page-footer__list page-footer__catalog-list">
+					<li class="page-footer__menu-item"><a href="#" data-content="Анестезия">Анестезия</a></li>
+					<li class="page-footer__menu-item"><a href="#" data-content="Дезинфекция">Дезинфекция</a></li>
+					<li class="page-footer__menu-item"><a href="#" data-content="Ирригаторы">Ирригаторы</a></li>
+					<li class="page-footer__menu-item"><a href="#" data-content="Ортопедия">Ортопедия</a></li>
+					<li class="page-footer__menu-item"><a href="#" data-content="Профилактика">Профилактика</a></li>
+					<li class="page-footer__menu-item"><a href="#" data-content="Терапия">Терапия</a></li>
+				</ul>
+			</div>
+			<div class="page-footer__menu page-footer__help-menu">
+				<h4 class="page-footer__name">Помощь</h4>
+				<ul class="page-footer__list page-footer__help-list">
+					<li class="page-footer__menu-item"><a href="#" data-content="Как оплатить?">Как оплатить?</a></li>
+					<li class="page-footer__menu-item"><a href="#" data-content="Доставка">Доставка</a></li>
+					<li class="page-footer__menu-item"><a href="#" data-content="Обратная связь">Обратная связь</a></li>
+					<li class="page-footer__menu-item"><a href="#" data-content="Реклама">Реклама</a></li>
+					<li class="page-footer__menu-item"><a href="#" data-content="Промокоды">Промокоды</a></li>
+				</ul>
+			</div>
+			<div class="page-footer__menu page-footer__payment">
+				<h4 class="page-footer__name">Оплата</h4>
+				<div class="page-footer__payment-images">
+					<img src="img/mastercard.svg" width="90" alt="Mastercard Риадент">
+					<img src="img/visa.svg" width="90" alt="Visa Риадент">
+				</div>
+				<div class="page-footer__socials">
+					<h4 class="page-footer__name">Соц.сети</h4>
+					<ul class="page-footer__socials-list">
+						<li class="page-footer__socials-item"><a href="#">Facebook</a></li>
+						<li class="page-footer__socials-item"><a href="https://vk.com/riadent_ufa/">Vkontakte</a></li>
+						<li class="page-footer__socials-item"><a href="https://wa.me/79279405522">Whatsapp</a></li>
+						<li class="page-footer__socials-item"><a href="https://www.instagram.com/riadent/">Instagram</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="page-footer__copyright">
+			<div class="container page-footer__copyright-container">
+				<p class="page-footer__copyright-text">Copyright © Riamedgroup 2020  Все права защищены</p>
+			</div>
+		</div>
+	</footer>
+
+	<section class="modal-login">
+		<form class="modal-login__form" action="">
+			<div class="modal-login__buttons-block modal-login__buttons-block--opened">
+				<button class="modal-login__button modal-login__button--enter">Войти на сайт</button>
+				<button class="modal-login__button modal-login__button--registration">Регистрация</button>
+			</div>
+
+			<div class="modal-login__enter-block">
+				<input class="modal-login__text-input modal-login__text-input--email" type="email" placeholder="E-mail">
+				<input class="modal-login__text-input modal-login__text-input--password" type="password"
+				placeholder="Пароль">
+				<a class="modal-login__forget-password" href="#">Забыли пароль?</a>
+				<button class="modal-login__button modal-login__button--form-enter" type="submit">Войти</button>
+				<button class="modal-login__cancel-button modal-login__cancel-button--enter">Назад</button>
+			</div>
+
+			<div class="modal-login__registration-block">
+				<input class="modal-login__text-input modal-login__text-input--email" type="email" placeholder="E-mail">
+				<input class="modal-login__text-input modal-login__text-input--password" type="password"
+				placeholder="Пароль">
+				<input class="modal-login__text-input modal-login__text-input--password" type="password"
+				placeholder="Повторите пароль">
+				<a class="modal-login__forget-password" href="#">Забыли пароль?</a>
+				<button class="modal-login__button modal-login__button--form-registration" type="submit">Отправить</button>
+				<button class="modal-login__cancel-button modal-login__cancel-button--registration">Назад</button>
+			</div>
+		</form>
+		<button class="modal-login__close-button">
+			Закрыть
+		</button>
+	</section>
+
+	<script src="js/main-nav.js"></script>
+	<script src="js/modal-login.js"></script>
+	<script src="js/price.js"></script>
+</body>
+</html>

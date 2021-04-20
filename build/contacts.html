@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Контакты Riadent</title>
+	<link rel="preload" href="fonts/MyriadPro-Regular/MyriadPro-Regular.woff2" as="font">
+	<link rel="preload" href="fonts/MyriadPro-Bold/MyriadPro-Bold.woff2" as="font">
+	<link rel="preload" href="fonts/montserrat/montserrat.woff2" as="font">
+	<link rel="stylesheet" href="css/stylesheet.css">
+</head>
+<body>
+	<header class="page-header">
+		<div class="top-header">
+			<div class="container top-header__container">
+				<div class="top-header__adress">
+					<a href="#">г.Уфа ул.Кавказская 6/8</a>
+				</div>
+
+				<div class="top-header__time">
+					<a href="#">Мы работаем: Понедельник - Суббота: с 9:00 до 21:00</a>
+				</div>
+
+				<div class="top-header__feedback">
+					<a href="#" class="top-header__feedback-link">Обратная связь</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="middle-header">
+			<div class="container middle-header__container">
+				<div class="middle-header__logo">
+					<a href="#">
+						<picture>
+							<source media="(max-width: 1023px)" srcset="img/logo-mobile.svg">
+							<img class="middle-header__logo-img" src="img/logo.svg" alt="Логотип Riamed Group">
+						</picture>
+					</a>
+				</div>
+
+				<nav class="middle-header__nav main-nav main-nav--closed">
+					<button class="main-nav__toggle main-nav__toggle--closed" type="button"><span class="visually-hidden main-nav__toggle-bar">Меню</span></button>
+					<ul class="main-nav__list">
+						<li class="main-nav__item"><a href="#">Контакты</a></li>
+						<li class="main-nav__item"><a href="#">Каталог</a></li>
+						<li class="main-nav__item"><a href="#">Прайс-лист</a></li>
+						<li class="main-nav__item"><a href="#">Доставка</a></li>
+						<li class="main-nav__item"><a href="#">Отзывы</a></li>
+					</ul>
+
+					<div class="main-nav__mobile mobile-nav mobile-nav--closed">
+						<div class="mobile-nav__img-block">
+							<img src="img/user.svg" alt="">
+						</div>
+
+						<div class="mobile-nav__login-block">
+							<a class="mobile-nav__login-link" href="#">Войти</a>
+						</div>
+
+						<div class="mobile-nav__catalog-block">
+							<a class="mobile-nav__item mobile-nav__catalog" href="#">Каталог</a>
+						</div>
+
+						<hr class="mobile-nav__first-line">
+
+						<div class="mobile-nav__info-block">
+							<a class="mobile-nav__item mobile-nav__town" href="#">Санкт-Петербург</a>
+							<a class="mobile-nav__item mobile-nav__phone" href="#">+7 (347) 225-25-20</a>
+						</div>
+
+						<hr class="mobile-nav__second-line">
+
+						<div class="mobile-nav__menu-block">
+							<a class="mobile-nav__item mobile-nav__price" href="#">Прайс-лист</a>
+							<a class="mobile-nav__item mobile-nav__delivery" href="#">Доставка</a>
+							<a class="mobile-nav__item mobile-nav__reviews" href="#">Отзывы</a>
+							<a class="mobile-nav__item mobile-nav__contacts" href="#">Контакты</a>
+						</div>
+
+						<div class="mobile-nav__socials">
+							<ul class="mobile-nav__socials-list">
+								<li class="mobile-nav__socials-item mobile-nav__socials-item--vk"><a href="https://vk.com/riadent_ufa/">Вконакте Riadent</a></li>
+								<li class="mobile-nav__socials-item mobile-nav__socials-item--whatsapp"><a href="https://wa.me/79279405522">Написать Whatsapp Riadent</a></li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+
+				<div class="middle-header__phone">
+					<a class="middle-header__phone-number" href="tel:+73472252520">+7 (347) 225-25-20</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="bottom-header">
+			<div class="container bottom-header__container">
+				<div class="bottom-header__catalog">
+					<a href="#" class="bottom-header__catalog-link">Каталог товаров</a>
+					<ul class="bottom-header__dropdown-list">
+						<li class="bottom-header__dropdown-item"><a href="#">Производители</a></li>
+						<li class="bottom-header__dropdown-item"><a href="#">Анестезия/инструменты</a></li>
+						<li class="bottom-header__dropdown-item"><a href="#">Дезинфекция</a></li>
+						<li class="bottom-header__dropdown-item"><a href="#">Инструменты</a></li>
+					</ul>
+				</div>
+
+				<div class="bottom-header__search">
+					<form class="bottom-header__search-form" action="">
+						<input class="bottom-header__search-input" type="text" placeholder="Начните поиск здесь">
+					</form>
+				</div>
+
+				<div class="bottom-header__whatsapp">
+					<a class="bottom-header__whatsapp-link" href="https://wa.me/79279405522"><span>Написать Whatsapp</span></a>
+				</div>
+
+				<div class="bottom-header__user">
+					<ul class="bottom-header__user-list">
+						<li class="bottom-header__user-item bottom-header__user-item--cart">
+							<a href="#"></a>
+						</li>
+						<li class="bottom-header__user-item bottom-header__user-item--entry">
+							<a class="modal-login__link" href="#"></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main class="page-main page-main--without-background">
+		<section class="breadcrumbs">
+			<div class="container breadcrumbs__container"></div>
+		</section>
+		<section class="contacts">
+			<div class="container contacts__container">
+				<h1 class="contacts__title">Контакты</h1>
+				<!-- <section class="contacts__top-info">
+					<div class="contacts__block contacts__top-phone">
+						<p class="contacts__top-text">Уфа</p>
+						<a class="contacts__top-link" href="tel:{{ telephone }}">+7 (347) 225-02-04</a>
+					</div>
+					<div class="contacts__block contacts__top-socials">
+						<p class="contacts__top-text">Мы в соц.сетях</p>
+						<ul class="contacts__socials-list">
+							<li class="contacts__socials-item"><a href="#">Facebook</a></li>
+							<li class="contacts__socials-item"><a href="https://vk.com/riadent_ufa/">Vkontakte</a></li>
+							<li class="contacts__socials-item"><a href="https://wa.me/79279405522" target="_blank">Whatsapp</a></li>
+							<li class="contacts__socials-item"><a href="#">Instagram</a></li>
+						</ul>
+					</div>
+					<div class="contacts__block contacts__feedback-block">
+						<a class="link--green contacts__feedback-link" href="#">Обратная связь</a>
+					</div>
+					<div class="contacts__block contacts__bottom-phone"></div>
+					<div class="contacts__block contacts__bottom-socials">
+						<p class="contacts__top-text">Электронная почта</p>
+						<a class="contacts__mail-link" href="#">riamed_ufa@mail.ru</a>
+					</div>
+				</section> -->
+				<section class="contacts__bottom-info">
+					<div class="contacts__map-block">
+						<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A4ac7d638c2223acf5c3b80e16c00f10858762b23cff14f665075230854ac764c&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+					</div>
+					<div class="contacts__map-info">
+						<h3 class="contacts__map-title">Уфа</h3>
+						<p class="contacts__map-text"><b>Адрес:</b> Республика Башкортостан, г. Уфа, ул.Кавказская, д.6/6</p>
+						<p class="contacts__map-text"><b>Время работы:</b> Пн.-Пт. с 10:00 до 18:00 (прием заявок и пункт выдачи)</p>
+						<p class="contacts__map-text"><b>Шоурум:</b> Пн.-Пт. с 10:00 до 17:45</p>
+						<p class="contacts__map-text"><b>Телефон:</b> <a href="tel: +73472250204">+7 (347) 225-02-04</a></p>
+						<p class="contacts__map-text"><b>Почта:</b> <a href="mailto: riamed_ufa@mail.ru">riamed_ufa@mail.ru</a></p>
+					</div>
+				</section>
+				<section class="contacts__adress-list">
+					<div class="contacts__adress-item">
+						<div class="contacts__map-block">
+							<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A4fbd2881638f76571d5992d2830e0e28cd15364d2f7d7ec450e5aa2b834280ee&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+						</div>
+						<div class="contacts__map-info">
+							<h3 class="contacts__map-title">Стерлитамак</h3>
+							<p class="contacts__map-text"><b>Адрес:</b> г.Стерлитамак, улица Курчатова д.18</p>
+						</div>
+					</div>
+					<div class="contacts__adress-item">
+						<div class="contacts__map-block">
+							<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A3a27f9b0452631cfd93be0dd2169efbd5e044492fa8f77e81ecb2904d8278998&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+						</div>
+						<div class="contacts__map-info">
+							<h3 class="contacts__map-title">Октябрьский</h3>
+							<p class="contacts__map-text"><b>Адрес:</b> г.Октябрьский, проспект Ленина д.51/1</p>
+						</div>
+					</div>
+					<div class="contacts__adress-item">
+						<div class="contacts__map-block">
+							<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A68981f81f158c7031306ed9c52d5308c8e0bb1a41ec3363e69cb29380e823f34&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+						</div>
+						<div class="contacts__map-info">
+							<h3 class="contacts__map-title">Нефтекамск</h3>
+							<p class="contacts__map-text"><b>Адрес:</b> г.Нефтекамск, проспект Юбилейный д.11а</p>
+						</div>
+					</div>
+					<div class="contacts__adress-item">
+						<div class="contacts__map-block">
+							<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A45b95e64794449ad98cb3c2d0402d7274046de17f8c010deabaec9d461cbe496&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+						</div>
+						<div class="contacts__map-info">
+							<h3 class="contacts__map-title">Сибай</h3>
+							<p class="contacts__map-text"><b>Адрес:</b> г.Сибай, проспект Горняков д.36</p>
+						</div>
+					</div>
+				</section>
+			</div>
+		</section>
+	</main>
+
+	<footer class="page-footer page-footer--white">
+		<div class="container page-footer__container">
+			<div class="page-footer__menu page-footer__main-menu">
+				<a href="#" class="page-footer__logo-link">
+					<picture>
+						<source media="(max-width: 767px)" srcset="img/logo-footer-mobile.png" width="134" height="35">
+						<source media="(max-width: 1023px)" srcset="img/logo-mobile.svg" width="206">
+						<img src="img/logo.png" alt="">
+					</picture>
+				</a>
+				<ul class="page-footer__list page-footer__main-list">
+					<li class="page-footer__menu-item"><a href="#" data-content="Обратная связь">Обратная связь</a></li>
+					<li class="page-footer__menu-item"><a href="#" data-content="Контакты">Контакты</a></li>
+					<li class="page-footer__menu-item"><a href="#" data-content="Договор публичной оферты">Договор публичной оферты</a></li>
+					<li class="page-footer__menu-item"><a href="#" data-content="Политика конфиденциальности">Политика конфиденциальности</a></li>
+				</ul>
+			</div>
+			<div class="page-footer__menu page-footer__market-menu">
+				<h4 class="page-footer__name">R&A market</h4>
+				<ul class="page-footer__list page-footer__market-list">
+					<li class="page-footer__menu-item"><a href="#" data-content="Прайс-лист">Прайс-лист</a></li>
+					<li class="page-footer__menu-item"><a href="#" data-content="Отзывы">Отзывы</a></li>
+					<li class="page-footer__menu-item"><a href="#" data-content="Блог">Блог</a></li>
+					<li class="page-footer__menu-item"><a href="#" data-content="Компании">Компании</a></li>
+					<li class="page-footer__menu-item"><a href="#" data-content="Вакансии">Вакансии</a></li>
+				</ul>
+			</div>
+			<div class="page-footer__menu page-footer__catalog-menu">
+				<h4 class="page-footer__name">Каталог</h4>
+				<ul class="page-footer__list page-footer__catalog-list">
+					<li class="page-footer__menu-item"><a href="#" data-content="Анестезия">Анестезия</a></li>
+					<li class="page-footer__menu-item"><a href="#" data-content="Дезинфекция">Дезинфекция</a></li>
+					<li class="page-footer__menu-item"><a href="#" data-content="Ирригаторы">Ирригаторы</a></li>
+					<li class="page-footer__menu-item"><a href="#" data-content="Ортопедия">Ортопедия</a></li>
+					<li class="page-footer__menu-item"><a href="#" data-content="Профилактика">Профилактика</a></li>
+					<li class="page-footer__menu-item"><a href="#" data-content="Терапия">Терапия</a></li>
+				</ul>
+			</div>
+			<div class="page-footer__menu page-footer__help-menu">
+				<h4 class="page-footer__name">Помощь</h4>
+				<ul class="page-footer__list page-footer__help-list">
+					<li class="page-footer__menu-item"><a href="#" data-content="Как оплатить?">Как оплатить?</a></li>
+					<li class="page-footer__menu-item"><a href="#" data-content="Доставка">Доставка</a></li>
+					<li class="page-footer__menu-item"><a href="#" data-content="Обратная связь">Обратная связь</a></li>
+					<li class="page-footer__menu-item"><a href="#" data-content="Реклама">Реклама</a></li>
+					<li class="page-footer__menu-item"><a href="#" data-content="Промокоды">Промокоды</a></li>
+				</ul>
+			</div>
+			<div class="page-footer__menu page-footer__payment">
+				<h4 class="page-footer__name">Оплата</h4>
+				<div class="page-footer__payment-images">
+					<img src="img/mastercard.svg" width="90" alt="Mastercard Риадент">
+					<img src="img/visa.svg" width="90" alt="Visa Риадент">
+				</div>
+				<div class="page-footer__socials">
+					<h4 class="page-footer__name">Соц.сети</h4>
+					<ul class="page-footer__socials-list">
+						<li class="page-footer__socials-item"><a href="#">Facebook</a></li>
+						<li class="page-footer__socials-item"><a href="https://vk.com/riadent_ufa/">Vkontakte</a></li>
+						<li class="page-footer__socials-item"><a href="https://wa.me/79279405522">Whatsapp</a></li>
+						<li class="page-footer__socials-item"><a href="https://www.instagram.com/riadent/">Instagram</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="page-footer__copyright">
+			<div class="container page-footer__copyright-container">
+				<p class="page-footer__copyright-text">Copyright © Riamedgroup 2020  Все права защищены</p>
+			</div>
+		</div>
+	</footer>
+
+	<section class="modal-login">
+		<form class="modal-login__form" action="">
+			<div class="modal-login__buttons-block modal-login__buttons-block--opened">
+				<button class="modal-login__button modal-login__button--enter">Войти на сайт</button>
+				<button class="modal-login__button modal-login__button--registration">Регистрация</button>
+			</div>
+
+			<div class="modal-login__enter-block">
+				<input class="modal-login__text-input modal-login__text-input--email" type="email" placeholder="E-mail">
+				<input class="modal-login__text-input modal-login__text-input--password" type="password"
+				placeholder="Пароль">
+				<a class="modal-login__forget-password" href="#">Забыли пароль?</a>
+				<button class="modal-login__button modal-login__button--form-enter" type="submit">Войти</button>
+				<button class="modal-login__cancel-button modal-login__cancel-button--enter">Назад</button>
+			</div>
+
+			<div class="modal-login__registration-block">
+				<input class="modal-login__text-input modal-login__text-input--email" type="email" placeholder="E-mail">
+				<input class="modal-login__text-input modal-login__text-input--password" type="password"
+				placeholder="Пароль">
+				<input class="modal-login__text-input modal-login__text-input--password" type="password"
+				placeholder="Повторите пароль">
+				<a class="modal-login__forget-password" href="#">Забыли пароль?</a>
+				<button class="modal-login__button modal-login__button--form-registration" type="submit">Отправить</button>
+				<button class="modal-login__cancel-button modal-login__cancel-button--registration">Назад</button>
+			</div>
+		</form>
+		<button class="modal-login__close-button">
+			Закрыть
+		</button>
+	</section>
+
+	<script src="js/main-nav.js"></script>
+	<script src="js/modal-login.js"></script>
+</body>
+</html>
