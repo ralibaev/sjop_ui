@@ -1,0 +1,69 @@
+{{ header }}
+</header>
+<main class="page-main">
+  <section class="breadcrumbs">
+    <div class="container breadcrumbs__container">
+      <ul class="breadcrumbs__list">
+        {% for breadcrumb in breadcrumbs %}
+          <li class="breadcrumbs__item"><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </section>
+  <section class="contacts">
+    <div class="container contacts__container">
+      <h1 class="contacts__title">Контакты</h1>
+      <section class="contacts__top-info">
+        <div class="contacts__block contacts__top-phone">
+          <p class="contacts__top-text">Уфа</p>
+          <a class="contacts__top-link" href="tel:{{ telephone }}">{{ telephone }}</a>
+        </div>
+
+        <div class="contacts__block contacts__top-socials">
+          <p class="contacts__top-text">Мы в соц.сетях</p>
+          <ul class="contacts__socials-list">
+            <!--li class="contacts__socials-item"><a href="#">Facebook</a></li-->
+            <li class="contacts__socials-item"><a href="https://vk.com/riadent_ufa/">Vkontakte</a></li>
+            <li class="contacts__socials-item"><a href="https://wa.me/79279405522" target="_blank">Whatsapp</a></li>
+            <!--li class="contacts__socials-item"><a href="#">Instagram</a></li-->
+          </ul>
+        </div>
+
+        <div class="contacts__block contacts__feedback-block">
+          <a class="link--green contacts__feedback-link" href="#">Обратная связь</a>
+        </div>
+
+        <div class="contacts__block contacts__bottom-phone">
+
+        </div>
+
+        <div class="contacts__block contacts__bottom-socials">
+          <p class="contacts__top-text">Электронная почта</p>
+          <a class="contacts__mail-link" href="#">riamed_ufa@mail.ru</a>
+        </div>
+      </section>
+
+      <section class="contacts__bottom-info">
+        <div class="contacts__map-block">
+          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A4ac7d638c2223acf5c3b80e16c00f10858762b23cff14f665075230854ac764c&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+        </div>
+
+        <div class="contacts__map-info">
+          <h3 class="contacts__map-title">Уфа</h3>
+          <p class="contacts__map-text"><b>Адрес:</b> {{ address }}</p>
+          <p class="contacts__map-text"><b>Время работы:</b> Пн.-Пт. с 10:00 до 18:00 (прием заявок и пункт выдачи)</p>
+          <p class="contacts__map-text"><b>Шоурум:</b> Пн.-Пт. с 10:00 до 17:45</p>
+          <p class="contacts__map-text"><b>Телефон:</b> {{ telephone }}</p>
+          <p class="contacts__map-text"><b>Почта:</b> riamed_ufa@mail.ru</p>
+        </div>
+      </section>
+    </div>
+
+
+
+
+
+
+  </section>
+</main>
+{{ footer }}
